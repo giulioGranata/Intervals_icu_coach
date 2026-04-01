@@ -1,0 +1,34 @@
+# Credentials — never commit these
+.env
+*.key
+*.secret
+
+# Athlete dossier — keep private (copy from DOSSIER_TEMPLATE.md)
+DOSSIER.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Generated data files (auto-committed by GitHub Actions)
+# Uncomment the lines below if you want to exclude them from manual commits
+# latest.json
+# history.json
+# ftp_history.json
+# routes.json
+# intervals.json
+
+# Logs
+*.log
+sync.log
+
+# OS
+.DS_Store
+Thumbs.db
