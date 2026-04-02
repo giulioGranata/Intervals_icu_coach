@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-04-02T18:22:35.122282Z",
+  "protocol_version": "11.24",
+  "script_version": "3.95",
+  "athlete": {
+    "id": "i153108",
+    "name": "Giulio Granata"
+  },
+  "readiness": {
+    "decision": "go",
+    "priority": "P3",
+    "confidence": "low",
+    "signals": {
+      "hrv": "unknown",
+      "rhr": "unknown",
+      "sleep": "unknown",
+      "tsb": "unknown",
+      "acwr": "green",
+      "ri": "unknown"
+    },
+    "red_count": 0,
+    "reason": "All signals within acceptable range"
+  },
+  "metrics": {
+    "ctl": 100.5,
+    "atl": 94.8,
+    "tsb": null,
+    "ramp_rate": -0.1,
+    "acwr": 1.006,
+    "acute_load_7d": 94.6,
+    "chronic_load_28d": 94.0,
+    "monotony": 6.58,
+    "strain": 4356.0,
+    "weekly_load": 662.0,
+    "recovery_index": null,
+    "hrv_today": null,
+    "hrv_baseline": null,
+    "rhr_today": null,
+    "rhr_baseline": null,
+    "sleep_hours": null
+  },
+  "phase": {
+    "current": "Deload",
+    "confidence": "low",
+    "ctl_slope_per_week": -1.53,
+    "hard_day_density": 0.0,
+    "days_to_next_race": null
+  },
+  "tid": {
+    "28d": {
+      "z1_pct": 42.2,
+      "z2_pct": 53.3,
+      "z3_pct": 4.5,
+      "z1_sec": 62124,
+      "z2_sec": 78426,
+      "z3_sec": 6589,
+      "classification": "Threshold",
+      "pi": 0.552,
+      "window_days": 28
+    },
+    "7d": {
+      "z1_pct": 38.3,
+      "z2_pct": 57.5,
+      "z3_pct": 4.2,
+      "z1_sec": 14971,
+      "z2_sec": 22481,
+      "z3_sec": 1650,
+      "classification": "Threshold",
+      "pi": 0.447,
+      "window_days": 7
+    }
+  },
+  "weekly_totals": {
+    "tss": 760,
+    "hours": 10.9,
+    "sessions": 9
+  },
+  "upcoming_events": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 6.58,
+      "message": "Monotony 6.58 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
+  "recent_activities": [
+    {
+      "id": "i136610069",
+      "date": "2026-04-02",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 4527,
+      "distance_m": 50517.69,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 149,
+      "max_hr": 174,
+      "tss": 95,
+      "elevation_m": 79.0,
+      "avg_cadence": 94.06605
+    },
+    {
+      "id": "i136368469",
+      "date": "2026-04-01",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 4814,
+      "distance_m": 51568.16,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 139,
+      "max_hr": 174,
+      "tss": 91,
+      "elevation_m": 192.0,
+      "avg_cadence": 92.9624
+    },
+    {
+      "id": "i136081137",
+      "date": "2026-03-31",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 4812,
+      "distance_m": 53147.27,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 143,
+      "max_hr": 171,
+      "tss": 97,
+      "elevation_m": 86.0,
+      "avg_cadence": 94.71066
+    },
+    {
+      "id": "i135829559",
+      "date": "2026-03-30",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 5443,
+      "distance_m": 58317.73,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 134,
+      "max_hr": 171,
+      "tss": 95,
+      "elevation_m": 145.0,
+      "avg_cadence": 92.589264
+    },
+    {
+      "id": "i135563982",
+      "date": "2026-03-29",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 5497,
+      "distance_m": 61005.85,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 140,
+      "max_hr": 164,
+      "tss": 107,
+      "elevation_m": 97.0,
+      "avg_cadence": 95.35508
+    },
+    {
+      "id": "i135319328",
+      "date": "2026-03-28",
+      "name": "Zwift - TT: Stage 6a: Zwift Games: Epiloch",
+      "type": "VirtualRide",
+      "duration_sec": 1019,
+      "distance_m": 11534.61,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 156,
+      "max_hr": 173,
+      "tss": 26,
+      "elevation_m": 94.0,
+      "avg_cadence": 98.534836
+    },
+    {
+      "id": "i135317052",
+      "date": "2026-03-28",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 4532,
+      "distance_m": 50142.18,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 140,
+      "max_hr": 171,
+      "tss": 87,
+      "elevation_m": 79.0,
+      "avg_cadence": 94.17538
+    },
+    {
+      "id": "i135084024",
+      "date": "2026-03-27",
+      "name": "Zwift - 0",
+      "type": "VirtualRide",
+      "duration_sec": 3789,
+      "distance_m": 39642.56,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 134,
+      "max_hr": 173,
+      "tss": 64,
+      "elevation_m": 170.0,
+      "avg_cadence": 94.46392
+    },
+    {
+      "id": "i134862012",
+      "date": "2026-03-26",
+      "name": "Zwift - 4",
+      "type": "VirtualRide",
+      "duration_sec": 4661,
+      "distance_m": 52014.32,
+      "avg_watts": null,
+      "np_watts": null,
+      "avg_hr": 149,
+      "max_hr": 172,
+      "tss": 98,
+      "elevation_m": 80.0,
+      "avg_cadence": 95.16753
+    }
+  ]
+}
