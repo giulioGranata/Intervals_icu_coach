@@ -3,9 +3,6 @@
 *.key
 *.secret
 
-# Athlete dossier — keep private (copy from DOSSIER_TEMPLATE.md)
-DOSSIER.md
-
 # Python
 __pycache__/
 *.py[cod]
