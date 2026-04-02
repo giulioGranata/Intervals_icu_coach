@@ -1,0 +1,139 @@
+name: Auto-Sync Intervals.icu Data
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes
+  workflow_dispatch:           # manual trigger via GitHub UI
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Verify sync.py exists
+        run: |
+          if [ ! -f sync.py ]; then
+            echo "❌ ERROR: sync.py not found"
+            ls -la
+            exit 1
+          fi
+          echo "✅ sync.py found ($(wc -c < sync.py) bytes)"
+
+      - name: Verify secrets are configured
+        run: |
+          if [ -z "${{ secrets.ATHLETE_ID }}" ]; then
+            echo "❌ ERROR: ATHLETE_ID secret not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.INTERVALS_KEY }}" ]; then
+            echo "❌ ERROR: INTERVALS_KEY secret not set"
+            exit 1
+          fi
+          echo "✅ Secrets configured"
+
+      - name: Run sync
+        env:
+          ATHLETE_ID: ${{ secrets.ATHLETE_ID }}
+          INTERVALS_KEY: ${{ secrets.INTERVALS_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}
+        run: |
+          echo "🚀 Running sync (athlete ${ATHLETE_ID:0:5}...)"
+          python sync.py \
+            --athlete-id "$ATHLETE_ID" \
+            --intervals-key "$INTERVALS_KEY" \
+            --github-token "$GITHUB_TOKEN" \
+            --github-repo "$GITHUB_REPO" \
+            --days 7
+
+      - name: Verify output
+        run: |
+          for f in latest.json history.json ftp_history.json; do
+            if [ -f "$f" ]; then
+              echo "✅ $f ($(wc -c < $f) bytes)"
+            else
+              echo "⚠️  $f not found"
+            fi
+          done
+
+      - name: Archive and commit
+        if: success()
+        run: |
+          YEAR_MONTH=$(date -u +"%Y-%m")
+          TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
+          mkdir -p "archive/${YEAR_MONTH}"
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Stage all generated files before pull to avoid overwrite errors
+          for f in latest.json history.json ftp_history.json; do
+            [ -f "$f" ] && git add "$f" && echo "Staged $f"
+          done
+
+          if [ -f latest.json ]; then
+            cp latest.json "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
+            git add "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
+          fi
+
+          # Rebase against main (autostash keeps staged changes safe)
+          git pull --rebase --autostash origin main
+
+          if ! git diff --staged --quiet; then
+            git commit -m "sync: training data $(date -u +"%Y-%m-%d %H:%M UTC")"
+            git push origin main
+            echo "✅ Data committed and pushed"
+          else
+            echo "⏭️  No changes to commit"
+          fi
+
+      - name: Update README sync timestamp
+        if: success()
+        run: |
+          SYNC_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          if [ -f README.md ]; then
+            if grep -q "Last successful sync:" README.md; then
+              sed -i "s/\*\*Last successful sync:\*\*.*/\*\*Last successful sync:\*\* ${SYNC_TIME}/" README.md
+            else
+              echo -e "\n**Last successful sync:** ${SYNC_TIME}" >> README.md
+            fi
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            if ! git diff --quiet README.md; then
+              git add README.md
+              git commit -m "docs: update sync timestamp"
+              git push origin main
+            fi
+          fi
+
+      - name: Upload artifacts (manual trigger only)
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-data-${{ github.run_id }}
+          path: |
+            latest.json
+            history.json
+            ftp_history.json
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Sync failed — check ATHLETE_ID / INTERVALS_KEY secrets and API access"
