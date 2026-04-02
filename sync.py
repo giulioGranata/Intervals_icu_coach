@@ -213,6 +213,11 @@ class IntervalsSync:
         cutoff = (today - datetime.timedelta(days=days)).isoformat()
         z1 = z2 = z3 = 0
 
+        def _zt_val(v):
+            if isinstance(v, dict):
+                return v.get("secs") or v.get("seconds") or v.get("time") or 0
+            return v or 0
+
         for act in activities:
             if act.get("start_date_local", "")[:10] < cutoff:
                 continue
@@ -220,13 +225,13 @@ class IntervalsSync:
             if not zt:
                 continue
             if len(zt) >= 7:
-                z1 += (zt[0] or 0) + (zt[1] or 0)
-                z2 += (zt[2] or 0) + (zt[3] or 0)
-                z3 += sum(zt[4:7])
+                z1 += _zt_val(zt[0]) + _zt_val(zt[1])
+                z2 += _zt_val(zt[2]) + _zt_val(zt[3])
+                z3 += sum(_zt_val(v) for v in zt[4:7])
             elif len(zt) == 3:
-                z1 += zt[0] or 0
-                z2 += zt[1] or 0
-                z3 += zt[2] or 0
+                z1 += _zt_val(zt[0])
+                z2 += _zt_val(zt[1])
+                z3 += _zt_val(zt[2])
 
         total = z1 + z2 + z3
         if total == 0:
