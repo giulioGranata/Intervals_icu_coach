@@ -118,10 +118,8 @@ For scheduled local sync on macOS/Linux, add a cron job:
 
 ### Claude Code (agentic)
 
-```
-Load SECTION_11.md and DOSSIER.md, then read latest.json.
-Provide a pre-workout briefing for today's planned session.
-```
+Open the repo in Claude Code — the session-start hook loads automatically.  
+Claude reads `SECTION_11.md`, `DOSSIER.md`, and `latest.json` at startup and delivers the coaching briefing without any manual prompt.
 
 ### Using Raw URLs
 
