@@ -62,7 +62,8 @@ class IntervalsSync:
         oldest, newest = self._date_range(days_back)
         fields = (
             "id,name,type,sport_type,start_date_local,moving_time,distance,"
-            "average_watts,normalized_watts,average_heartrate,max_heartrate,"
+            "average_watts,normalized_watts,icu_weighted_avg_watts,icu_average_watts,"
+            "average_heartrate,max_heartrate,"
             "tss,icu_training_load,icu_atl,icu_ctl,icu_tsb,"
             "icu_zone_times,icu_hr_zone_times,calories,"
             "total_elevation_gain,average_speed,average_cadence"
@@ -291,6 +292,9 @@ class IntervalsSync:
             ctl = a.get("icu_ctl")
             atl = a.get("icu_atl")
             tsb = a.get("icu_tsb")
+            # TSB not always returned by the API — compute as CTL − ATL
+            if tsb is None and ctl is not None and atl is not None:
+                tsb = ctl - atl
 
         # Ramp rate from previous week's CTL
         if ctl and len(recent) > 1:
@@ -586,8 +590,11 @@ class IntervalsSync:
                 "type": act.get("type") or act.get("sport_type"),
                 "duration_sec": act.get("moving_time"),
                 "distance_m": act.get("distance"),
-                "avg_watts": act.get("average_watts"),
-                "np_watts": act.get("normalized_watts"),
+                "avg_watts": (act.get("average_watts")
+                              or act.get("icu_average_watts")
+                              or act.get("icu_weighted_avg_watts")),
+                "np_watts": (act.get("normalized_watts")
+                             or act.get("icu_weighted_avg_watts")),
                 "avg_hr": act.get("average_heartrate"),
                 "max_hr": act.get("max_heartrate"),
                 "tss": act.get("tss") or act.get("icu_training_load"),
