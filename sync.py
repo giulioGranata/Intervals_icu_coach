@@ -66,7 +66,9 @@ class IntervalsSync:
             "average_heartrate,max_heartrate,"
             "tss,icu_training_load,icu_atl,icu_ctl,icu_tsb,"
             "icu_zone_times,icu_hr_zone_times,calories,"
-            "total_elevation_gain,average_speed,average_cadence"
+            "total_elevation_gain,average_speed,average_cadence,"
+            "icu_efficiency_factor,icu_decoupling,icu_intensity,"
+            "icu_variability_index,icu_hrr,interval_summary"
         )
         data = self._get(
             f"athlete/{self.athlete_id}/activities",
@@ -600,6 +602,19 @@ class IntervalsSync:
                 "tss": act.get("tss") or act.get("icu_training_load"),
                 "elevation_m": act.get("total_elevation_gain"),
                 "avg_cadence": act.get("average_cadence"),
+                # Priority high
+                "efficiency_factor": act.get("icu_efficiency_factor"),
+                "decoupling": act.get("icu_decoupling"),
+                "intensity_factor": act.get("icu_intensity"),
+                "zone_times": act.get("icu_zone_times"),
+                # Priority medium
+                "variability_index": act.get("icu_variability_index"),
+                "ctl_snapshot": act.get("icu_ctl"),
+                "atl_snapshot": act.get("icu_atl"),
+                # Priority low
+                "hrr": act.get("icu_hrr"),
+                "calories": act.get("calories"),
+                "interval_summary": act.get("interval_summary"),
             })
 
         weekly_tss = sum((a.get("tss") or a.get("icu_training_load") or 0) for a in recent_7d)
