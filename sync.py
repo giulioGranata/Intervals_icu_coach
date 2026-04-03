@@ -8,6 +8,7 @@ Version 3.95 | MIT License | https://github.com/CrankAddict/section-11
 import argparse
 import base64
 import datetime
+import hashlib
 import json
 import math
 import os
@@ -620,8 +621,16 @@ class IntervalsSync:
         weekly_tss = sum((a.get("tss") or a.get("icu_training_load") or 0) for a in recent_7d)
         weekly_hours = sum((a.get("moving_time") or 0) for a in recent_7d) / 3600
 
+        act_ids = sorted(
+            str(a.get("id")) for a in activities if a.get("id") is not None
+        )
+        act_sig = hashlib.sha256(
+            json.dumps(act_ids).encode("utf-8")
+        ).hexdigest()[:16]
+
         return {
             "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+            "activities_signature": act_sig,
             "protocol_version": PROTOCOL_VERSION,
             "script_version": VERSION,
             "athlete": {
@@ -719,15 +728,19 @@ class IntervalsSync:
 
     @staticmethod
     def _content_changed(filepath: Path, new_data: dict) -> bool:
-        """Return True if new_data differs from the existing file (ignoring generated_at).
-        Uses JSON string comparison to avoid false positives from float representation."""
+        """Return True if new_data differs from the existing file (ignoring generated_at
+        and activities_signature). Uses JSON string comparison for float consistency."""
         if not filepath.exists():
             return True
         try:
             with open(filepath, encoding="utf-8") as f:
                 existing = json.load(f)
             existing.pop("generated_at", None)
-            new_copy = {k: v for k, v in new_data.items() if k != "generated_at"}
+            existing.pop("activities_signature", None)
+            new_copy = {
+                k: v for k, v in new_data.items()
+                if k not in ("generated_at", "activities_signature")
+            }
             # Serialize both to JSON strings for a consistent, float-safe comparison
             return (json.dumps(existing, sort_keys=True, default=str)
                     != json.dumps(new_copy, sort_keys=True, default=str))

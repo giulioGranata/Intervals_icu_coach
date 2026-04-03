@@ -86,13 +86,15 @@ jobs:
             [ -f "$f" ] && git add "$f"
           done
 
-          # Create archive ONLY if latest.json was actually modified
-          if [ -f latest.json ] && ! git diff --staged --quiet -- latest.json; then
+          # Archive only when the set of downloaded activity IDs changed (see activities_signature in latest.json)
+          NEW_SIG=$(jq -r '.activities_signature // empty' latest.json 2>/dev/null || true)
+          OLD_SIG=$(git show HEAD:latest.json 2>/dev/null | jq -r '.activities_signature // empty' || true)
+          if [ -f latest.json ] && [ -n "$NEW_SIG" ] && [ "$OLD_SIG" != "$NEW_SIG" ]; then
             cp latest.json "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
             git add "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
             echo "✅ Archive created: archive/${YEAR_MONTH}/${TIMESTAMP}.json"
           else
-            echo "⏭️  No new data — skipping archive"
+            echo "⏭️  No new activities — skipping archive"
           fi
 
           # Rebase against main (autostash keeps staged changes safe)
