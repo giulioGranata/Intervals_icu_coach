@@ -702,6 +702,20 @@ class IntervalsSync:
 
     # ── Main entry point ───────────────────────────────────────────────────────
 
+    @staticmethod
+    def _content_changed(filepath: Path, new_data: dict) -> bool:
+        """Return True if new_data differs from the existing file (ignoring generated_at)."""
+        if not filepath.exists():
+            return True
+        try:
+            with open(filepath, encoding="utf-8") as f:
+                existing = json.load(f)
+            existing.pop("generated_at", None)
+            new_copy = {k: v for k, v in new_data.items() if k != "generated_at"}
+            return existing != new_copy
+        except Exception:
+            return True
+
     def collect_and_save(self, output_dir: str = ".") -> dict:
         output = Path(output_dir)
         output.mkdir(exist_ok=True)
@@ -739,11 +753,19 @@ class IntervalsSync:
             "ftp_history.json": ftp_hist,
         }
 
+        any_changed = False
         for filename, data in files.items():
             fp = output / filename
+            if not self._content_changed(fp, data):
+                log(f"  ⏭️  {fp} — no changes, skipping")
+                continue
             with open(fp, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False, default=str)
             log(f"  ✅ {fp} ({fp.stat().st_size:,} bytes)")
+            any_changed = True
+
+        if not any_changed:
+            log("No new data — all files unchanged, nothing to commit")
 
         # Summary
         r = latest["readiness"]
