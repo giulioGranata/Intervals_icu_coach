@@ -704,7 +704,8 @@ class IntervalsSync:
 
     @staticmethod
     def _content_changed(filepath: Path, new_data: dict) -> bool:
-        """Return True if new_data differs from the existing file (ignoring generated_at)."""
+        """Return True if new_data differs from the existing file (ignoring generated_at).
+        Uses JSON string comparison to avoid false positives from float representation."""
         if not filepath.exists():
             return True
         try:
@@ -712,7 +713,9 @@ class IntervalsSync:
                 existing = json.load(f)
             existing.pop("generated_at", None)
             new_copy = {k: v for k, v in new_data.items() if k != "generated_at"}
-            return existing != new_copy
+            # Serialize both to JSON strings for a consistent, float-safe comparison
+            return (json.dumps(existing, sort_keys=True, default=str)
+                    != json.dumps(new_copy, sort_keys=True, default=str))
         except Exception:
             return True
 

@@ -81,14 +81,18 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # Stage all generated files before pull to avoid overwrite errors
+          # Stage data files (no-op if sync.py skipped them due to no changes)
           for f in latest.json history.json ftp_history.json; do
-            [ -f "$f" ] && git add "$f" && echo "Staged $f"
+            [ -f "$f" ] && git add "$f"
           done
 
-          if [ -f latest.json ]; then
+          # Create archive ONLY if latest.json was actually modified
+          if [ -f latest.json ] && ! git diff --staged --quiet -- latest.json; then
             cp latest.json "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
             git add "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
+            echo "✅ Archive created: archive/${YEAR_MONTH}/${TIMESTAMP}.json"
+          else
+            echo "⏭️  No new data — skipping archive"
           fi
 
           # Rebase against main (autostash keeps staged changes safe)
