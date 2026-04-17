@@ -1,7 +1,19 @@
 {
-  "generated_at": "2026-04-17T00:06:38.999060Z",
+  "generated_at": "2026-04-17T06:04:34.167577Z",
   "protocol_version": "11.24",
   "days": [
+    {
+      "date": "2026-04-17",
+      "tss": 64.0,
+      "duration_sec": 3705,
+      "sessions": 1,
+      "hrv": null,
+      "rhr": null,
+      "sleep_hours": null,
+      "ctl": 96.02838,
+      "atl": 84.31604,
+      "tsb": null
+    },
     {
       "date": "2026-04-16",
       "tss": 91.0,
