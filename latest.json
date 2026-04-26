@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T09:03:26.563354Z",
+  "generated_at": "2026-04-26T13:16:35.045092Z",
   "activities_signature": "959d8ccb1939d70e",
   "protocol_version": "11.24",
   "script_version": "3.95",
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 93.9,
-    "atl": 84.9,
-    "tsb": 9.0,
-    "ramp_rate": 0.5,
-    "acwr": 0.936,
-    "acute_load_7d": 81.4,
-    "chronic_load_28d": 87.0,
-    "monotony": 3.96,
-    "strain": 2257.2,
-    "weekly_load": 570.0,
+    "ctl": 94.5,
+    "atl": 88.1,
+    "tsb": 6.3,
+    "ramp_rate": 1.0,
+    "acwr": 0.966,
+    "acute_load_7d": 84.9,
+    "chronic_load_28d": 87.8,
+    "monotony": 3.19,
+    "strain": 1894.9,
+    "weekly_load": 594.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,36 +43,36 @@
   "phase": {
     "current": "Deload",
     "confidence": "low",
-    "ctl_slope_per_week": -1.81,
+    "ctl_slope_per_week": -1.66,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 50.8,
-      "z2_pct": 47.3,
-      "z3_pct": 1.9,
-      "z1_sec": 74688,
-      "z2_sec": 69515,
-      "z3_sec": 2726,
+      "z1_pct": 49.9,
+      "z2_pct": 48.0,
+      "z3_pct": 2.0,
+      "z1_sec": 73387,
+      "z2_sec": 70555,
+      "z3_sec": 2987,
       "classification": "Pyramidal",
-      "pi": 0.31,
+      "pi": 0.318,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 55.3,
-      "z2_pct": 43.8,
-      "z3_pct": 0.9,
-      "z1_sec": 23046,
-      "z2_sec": 18247,
-      "z3_sec": 365,
+      "z1_pct": 52.2,
+      "z2_pct": 46.3,
+      "z3_pct": 1.5,
+      "z1_sec": 21745,
+      "z2_sec": 19287,
+      "z3_sec": 626,
       "classification": "Pyramidal",
-      "pi": 0.055,
+      "pi": 0.228,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 659,
+    "tss": 683,
     "hours": 11.6,
     "sessions": 8
   },
@@ -81,8 +81,8 @@
     {
       "type": "ALARM",
       "metric": "Monotony",
-      "value": 3.96,
-      "message": "Monotony 3.96 at alarm level (≥2.5). Overuse risk."
+      "value": 3.19,
+      "message": "Monotony 3.19 at alarm level (≥2.5). Overuse risk."
     }
   ],
   "recent_activities": [
@@ -97,36 +97,36 @@
       "np_watts": 154,
       "avg_hr": null,
       "max_hr": null,
-      "tss": 113,
+      "tss": 137,
       "elevation_m": 473.0,
       "avg_cadence": 89.2592,
       "efficiency_factor": null,
       "decoupling": null,
-      "intensity_factor": 70.0,
+      "intensity_factor": 77.0,
       "zone_times": [
         {
           "id": "Z1",
-          "secs": 2120
+          "secs": 1719
         },
         {
           "id": "Z2",
-          "secs": 3011
+          "secs": 2111
         },
         {
           "id": "Z3",
-          "secs": 2437
+          "secs": 2608
         },
         {
           "id": "Z4",
-          "secs": 652
+          "secs": 1521
         },
         {
           "id": "Z5",
-          "secs": 91
+          "secs": 309
         },
         {
           "id": "Z6",
-          "secs": 5
+          "secs": 48
         },
         {
           "id": "Z7",
@@ -134,12 +134,12 @@
         },
         {
           "id": "SS",
-          "secs": 1392
+          "secs": 2027
         }
       ],
       "variability_index": 1.0694444,
-      "ctl_snapshot": 93.90369,
-      "atl_snapshot": 84.9266,
+      "ctl_snapshot": 94.46837,
+      "atl_snapshot": 88.12153,
       "hrr": null,
       "calories": 1366,
       "interval_summary": null
