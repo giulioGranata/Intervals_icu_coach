@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T01:52:07.538607Z",
+  "generated_at": "2026-05-31T09:30:54.546432Z",
   "activities_signature": "85f927e5fe0c2901",
   "protocol_version": "11.24",
   "script_version": "3.95",
@@ -13,7 +13,7 @@
     "confidence": "medium",
     "signals": {
       "hrv": "unknown",
-      "rhr": "unknown",
+      "rhr": "green",
       "sleep": "unknown",
       "tsb": "green",
       "acwr": "amber",
@@ -36,7 +36,7 @@
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
-    "rhr_today": null,
+    "rhr_today": 55,
     "rhr_baseline": 83.2,
     "sleep_hours": null
   },
