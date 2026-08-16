@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T13:18:44.668640Z",
+  "generated_at": "2026-08-16T13:52:43.701183Z",
   "activities_signature": "f3152b4f2116222a",
   "protocol_version": "11.24",
   "script_version": "3.95",
@@ -157,14 +157,14 @@
       },
       "calories": 1191,
       "interval_summary": [
-        "1x 2m53s 178w",
+        "2x 2m57s 173w",
         "1x 2m50s 209w",
         "2x 1m51s 197w",
-        "1x 3m48s 193w",
+        "2x 3m42s 193w",
         "1x 51s 224w",
         "1x 73s 229w",
         "1x 87s 220w",
-        "1x 44m14s 164w"
+        "1x 5m1s 163w"
       ]
     },
     {
