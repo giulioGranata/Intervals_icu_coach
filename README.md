@@ -3,7 +3,7 @@
 An AI endurance coaching pipeline built on the **Section 11 Open Protocol**.  
 Syncs your training data from [Intervals.icu](https://intervals.icu) and provides structured, science-based coaching input for Claude, ChatGPT, Gemini, Grok, and other AI platforms.
 
-**Last successful sync:** 2026-09-03 11:23:31 UTC
+**Last successful sync:** 2026-09-03 15:07:10 UTC
 
 ---
 
