@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T08:20:12.069912Z",
+  "generated_at": "2026-09-30T20:01:17.606665Z",
   "activities_signature": "eb15d135ae7cda90",
   "protocol_version": "11.24",
   "script_version": "3.95",
@@ -36,7 +36,7 @@
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
-    "rhr_today": 117,
+    "rhr_today": 40,
     "rhr_baseline": 118.0,
     "sleep_hours": null
   },
