@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T11:11:18.612551Z",
+  "generated_at": "2026-10-02T01:24:23.487919Z",
   "protocol_version": "11.24",
   "days": [
     {
@@ -996,18 +996,6 @@
       "sleep_hours": null,
       "ctl": 87.972336,
       "atl": 89.404465,
-      "tsb": null
-    },
-    {
-      "date": "2026-07-10",
-      "tss": 45.0,
-      "duration_sec": 1972,
-      "sessions": 1,
-      "hrv": null,
-      "rhr": null,
-      "sleep_hours": null,
-      "ctl": 87.39339,
-      "atl": 85.934586,
       "tsb": null
     }
   ]
