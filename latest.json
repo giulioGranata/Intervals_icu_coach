@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T08:01:16.915175Z",
-  "activities_signature": "99f943021d3a8411",
+  "generated_at": "2026-10-13T00:15:42.846973Z",
+  "activities_signature": "bb9739adb7446f05",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -27,12 +27,12 @@
     "atl": 101.4,
     "tsb": 5.8,
     "ramp_rate": -0.9,
-    "acwr": 0.888,
-    "acute_load_7d": 95.6,
-    "chronic_load_28d": 107.7,
-    "monotony": 4.02,
-    "strain": 2689.4,
-    "weekly_load": 669.0,
+    "acwr": 0.751,
+    "acute_load_7d": 78.3,
+    "chronic_load_28d": 104.2,
+    "monotony": 2.04,
+    "strain": 1117.9,
+    "weekly_load": 548.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,48 +43,41 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": 0.01,
+    "ctl_slope_per_week": 0.07,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 13.8,
-      "z2_pct": 82.1,
+      "z1_pct": 14.0,
+      "z2_pct": 81.7,
       "z3_pct": 4.2,
-      "z1_sec": 21133,
-      "z2_sec": 126141,
-      "z3_sec": 6417,
+      "z1_sec": 20882,
+      "z2_sec": 121665,
+      "z3_sec": 6309,
       "classification": "Threshold",
-      "pi": -0.151,
+      "pi": -0.143,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 4.5,
-      "z2_pct": 93.0,
-      "z3_pct": 2.5,
-      "z1_sec": 1744,
-      "z2_sec": 36011,
-      "z3_sec": 981,
+      "z1_pct": 4.9,
+      "z2_pct": 92.4,
+      "z3_pct": 2.7,
+      "z1_sec": 1594,
+      "z2_sec": 30226,
+      "z3_sec": 888,
       "classification": "Threshold",
-      "pi": -0.917,
+      "pi": -0.844,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 794,
-    "hours": 10.8,
-    "sessions": 8
+    "tss": 669,
+    "hours": 9.1,
+    "sessions": 7
   },
   "upcoming_events": [],
-  "alerts": [
-    {
-      "type": "ALARM",
-      "metric": "Monotony",
-      "value": 4.02,
-      "message": "Monotony 4.02 at alarm level (≥2.5). Overuse risk."
-    }
-  ],
+  "alerts": [],
   "recent_activities": [
     {
       "id": "i196322252",
@@ -600,76 +593,6 @@
         "2x 4m55s 180w",
         "1x 8m52s 189w",
         "1x 74s 154w"
-      ]
-    },
-    {
-      "id": "i193667950",
-      "date": "2026-10-05",
-      "name": "Zwift - Pacer Group Ride with Yumi",
-      "type": "VirtualRide",
-      "duration_sec": 6027,
-      "distance_m": 63101.13,
-      "avg_watts": 183,
-      "np_watts": 183,
-      "avg_hr": 0,
-      "max_hr": 0,
-      "tss": 125,
-      "elevation_m": 293.0,
-      "avg_cadence": 90.24324,
-      "efficiency_factor": null,
-      "decoupling": null,
-      "intensity_factor": 86.320755,
-      "zone_times": [
-        {
-          "id": "Z1",
-          "secs": 41
-        },
-        {
-          "id": "Z2",
-          "secs": 109
-        },
-        {
-          "id": "Z3",
-          "secs": 5187
-        },
-        {
-          "id": "Z4",
-          "secs": 598
-        },
-        {
-          "id": "Z5",
-          "secs": 89
-        },
-        {
-          "id": "Z6",
-          "secs": 4
-        },
-        {
-          "id": "Z7",
-          "secs": 0
-        },
-        {
-          "id": "SS",
-          "secs": 4843
-        }
-      ],
-      "variability_index": 1.0,
-      "ctl_snapshot": 109.40252,
-      "atl_snapshot": 116.60117,
-      "hrr": null,
-      "calories": 1052,
-      "interval_summary": [
-        "1x 10m2s 172w",
-        "1x 2m 176w",
-        "3x 30s 189w",
-        "3x 30s 236w",
-        "12x 6m1s 183w",
-        "11x 60s 177w",
-        "1x 20s 199w",
-        "2x 3s 200w",
-        "3x 2s 200w",
-        "1x 4s 200w",
-        "1x 99s 164w"
       ]
     }
   ]
