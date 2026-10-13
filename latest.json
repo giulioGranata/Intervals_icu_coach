@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T00:15:42.846973Z",
-  "activities_signature": "bb9739adb7446f05",
+  "generated_at": "2026-10-13T06:58:49.088821Z",
+  "activities_signature": "dd1dc8e6c3a35a0e",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 107.2,
-    "atl": 101.4,
-    "tsb": 5.8,
-    "ramp_rate": -0.9,
-    "acwr": 0.751,
-    "acute_load_7d": 78.3,
-    "chronic_load_28d": 104.2,
-    "monotony": 2.04,
-    "strain": 1117.9,
-    "weekly_load": 548.0,
+    "ctl": 107.1,
+    "atl": 101.6,
+    "tsb": 5.5,
+    "ramp_rate": -0.1,
+    "acwr": 0.862,
+    "acute_load_7d": 93.0,
+    "chronic_load_28d": 107.9,
+    "monotony": 4.28,
+    "strain": 2786.3,
+    "weekly_load": 651.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,123 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": 0.07,
+    "ctl_slope_per_week": 0.04,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 14.0,
-      "z2_pct": 81.7,
+      "z1_pct": 13.7,
+      "z2_pct": 82.0,
       "z3_pct": 4.2,
-      "z1_sec": 20882,
-      "z2_sec": 121665,
-      "z3_sec": 6309,
+      "z1_sec": 21120,
+      "z2_sec": 126240,
+      "z3_sec": 6535,
       "classification": "Threshold",
-      "pi": -0.143,
+      "pi": -0.154,
       "window_days": 28
     },
     "7d": {
       "z1_pct": 4.9,
-      "z2_pct": 92.4,
-      "z3_pct": 2.7,
-      "z1_sec": 1594,
-      "z2_sec": 30226,
-      "z3_sec": 888,
+      "z2_pct": 92.2,
+      "z3_pct": 3.0,
+      "z1_sec": 1832,
+      "z2_sec": 34801,
+      "z3_sec": 1114,
       "classification": "Threshold",
-      "pi": -0.844,
+      "pi": -0.797,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 669,
-    "hours": 9.1,
-    "sessions": 7
+    "tss": 772,
+    "hours": 10.5,
+    "sessions": 8
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.28,
+      "message": "Monotony 4.28 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i196676522",
+      "date": "2026-10-13",
+      "name": "Zwift - Pacer Group Ride with Jacques",
+      "type": "VirtualRide",
+      "duration_sec": 5038,
+      "distance_m": 54764.15,
+      "avg_watts": 180,
+      "np_watts": 182,
+      "avg_hr": 154,
+      "max_hr": 171,
+      "tss": 103,
+      "elevation_m": 185.0,
+      "avg_cadence": 88.3849,
+      "efficiency_factor": 1.1818181,
+      "decoupling": null,
+      "intensity_factor": 85.84906,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 60
+        },
+        {
+          "id": "Z2",
+          "secs": 178
+        },
+        {
+          "id": "Z3",
+          "secs": 3845
+        },
+        {
+          "id": "Z4",
+          "secs": 730
+        },
+        {
+          "id": "Z5",
+          "secs": 226
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 1196
+        }
+      ],
+      "variability_index": 1.0111111,
+      "ctl_snapshot": 107.09811,
+      "atl_snapshot": 101.58836,
+      "hrr": {
+        "start_index": 918,
+        "end_index": 978,
+        "start_time": 918,
+        "end_time": 978,
+        "start_bpm": 171,
+        "end_bpm": 150,
+        "hrr": 21
+      },
+      "calories": 866,
+      "interval_summary": [
+        "6x 9m55s 174w",
+        "2x 2m 177w",
+        "3x 30s 187w",
+        "3x 30s 238w",
+        "1x 5m58s 173w",
+        "5x 2m 210w",
+        "1x 92s 152w"
+      ]
+    },
     {
       "id": "i196322252",
       "date": "2026-10-12",
