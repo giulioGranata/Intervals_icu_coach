@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T04:00:18.138313Z",
-  "activities_signature": "e184230372b887b3",
+  "generated_at": "2026-10-14T09:30:47.690059Z",
+  "activities_signature": "4a34073edf45870d",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,23 +16,23 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "amber",
+      "acwr": "green",
       "ri": "unknown"
     },
     "red_count": 0,
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 107.1,
-    "atl": 101.6,
-    "tsb": 5.5,
-    "ramp_rate": -0.1,
-    "acwr": 0.736,
-    "acute_load_7d": 77.1,
-    "chronic_load_28d": 104.8,
-    "monotony": 2.05,
-    "strain": 1107.0,
-    "weekly_load": 540.0,
+    "ctl": 106.8,
+    "atl": 100.8,
+    "tsb": 6.0,
+    "ramp_rate": -0.3,
+    "acwr": 0.84,
+    "acute_load_7d": 90.9,
+    "chronic_load_28d": 108.2,
+    "monotony": 4.42,
+    "strain": 2811.1,
+    "weekly_load": 636.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,123 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": 0.16,
+    "ctl_slope_per_week": 0.09,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 13.8,
-      "z2_pct": 82.0,
+      "z1_pct": 13.6,
+      "z2_pct": 82.3,
       "z3_pct": 4.1,
-      "z1_sec": 20640,
-      "z2_sec": 122244,
-      "z3_sec": 6148,
+      "z1_sec": 20964,
+      "z2_sec": 126835,
+      "z3_sec": 6242,
       "classification": "Threshold",
-      "pi": -0.161,
+      "pi": -0.169,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 5.0,
-      "z2_pct": 92.5,
-      "z3_pct": 2.6,
-      "z1_sec": 1603,
-      "z2_sec": 29883,
-      "z3_sec": 830,
+      "z1_pct": 5.2,
+      "z2_pct": 92.4,
+      "z3_pct": 2.5,
+      "z1_sec": 1927,
+      "z2_sec": 34474,
+      "z3_sec": 924,
       "classification": "Threshold",
       "pi": -0.852,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 651,
-    "hours": 9.0,
-    "sessions": 7
+    "tss": 747,
+    "hours": 10.4,
+    "sessions": 8
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.42,
+      "message": "Monotony 4.42 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i197065209",
+      "date": "2026-10-14",
+      "name": "Zwift - Pacer Group Ride with Constance",
+      "type": "VirtualRide",
+      "duration_sec": 5008,
+      "distance_m": 53478.22,
+      "avg_watts": 174,
+      "np_watts": 176,
+      "avg_hr": 153,
+      "max_hr": 172,
+      "tss": 96,
+      "elevation_m": 163.0,
+      "avg_cadence": 89.458626,
+      "efficiency_factor": 1.1503268,
+      "decoupling": null,
+      "intensity_factor": 83.01887,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 100
+        },
+        {
+          "id": "Z2",
+          "secs": 224
+        },
+        {
+          "id": "Z3",
+          "secs": 4322
+        },
+        {
+          "id": "Z4",
+          "secs": 269
+        },
+        {
+          "id": "Z5",
+          "secs": 90
+        },
+        {
+          "id": "Z6",
+          "secs": 4
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 926
+        }
+      ],
+      "variability_index": 1.0114943,
+      "ctl_snapshot": 106.83699,
+      "atl_snapshot": 100.84443,
+      "hrr": {
+        "start_index": 1027,
+        "end_index": 1087,
+        "start_time": 1027,
+        "end_time": 1087,
+        "start_bpm": 165,
+        "end_bpm": 149,
+        "hrr": 16
+      },
+      "calories": 834,
+      "interval_summary": [
+        "1x 10m5s 168w",
+        "1x 2m 177w",
+        "3x 30s 186w",
+        "3x 30s 234w",
+        "1x 29m59s 174w",
+        "1x 36m21s 173w",
+        "1x 2m4s 148w"
+      ]
+    },
     {
       "id": "i196676522",
       "date": "2026-10-13",
