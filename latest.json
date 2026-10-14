@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T06:58:49.088821Z",
-  "activities_signature": "dd1dc8e6c3a35a0e",
+  "generated_at": "2026-10-14T04:00:18.138313Z",
+  "activities_signature": "e184230372b887b3",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,7 +16,7 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "green",
+      "acwr": "amber",
       "ri": "unknown"
     },
     "red_count": 0,
@@ -27,12 +27,12 @@
     "atl": 101.6,
     "tsb": 5.5,
     "ramp_rate": -0.1,
-    "acwr": 0.862,
-    "acute_load_7d": 93.0,
-    "chronic_load_28d": 107.9,
-    "monotony": 4.28,
-    "strain": 2786.3,
-    "weekly_load": 651.0,
+    "acwr": 0.736,
+    "acute_load_7d": 77.1,
+    "chronic_load_28d": 104.8,
+    "monotony": 2.05,
+    "strain": 1107.0,
+    "weekly_load": 540.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,48 +43,41 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": 0.04,
+    "ctl_slope_per_week": 0.16,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 13.7,
+      "z1_pct": 13.8,
       "z2_pct": 82.0,
-      "z3_pct": 4.2,
-      "z1_sec": 21120,
-      "z2_sec": 126240,
-      "z3_sec": 6535,
+      "z3_pct": 4.1,
+      "z1_sec": 20640,
+      "z2_sec": 122244,
+      "z3_sec": 6148,
       "classification": "Threshold",
-      "pi": -0.154,
+      "pi": -0.161,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 4.9,
-      "z2_pct": 92.2,
-      "z3_pct": 3.0,
-      "z1_sec": 1832,
-      "z2_sec": 34801,
-      "z3_sec": 1114,
+      "z1_pct": 5.0,
+      "z2_pct": 92.5,
+      "z3_pct": 2.6,
+      "z1_sec": 1603,
+      "z2_sec": 29883,
+      "z3_sec": 830,
       "classification": "Threshold",
-      "pi": -0.797,
+      "pi": -0.852,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 772,
-    "hours": 10.5,
-    "sessions": 8
+    "tss": 651,
+    "hours": 9.0,
+    "sessions": 7
   },
   "upcoming_events": [],
-  "alerts": [
-    {
-      "type": "ALARM",
-      "metric": "Monotony",
-      "value": 4.28,
-      "message": "Monotony 4.28 at alarm level (≥2.5). Overuse risk."
-    }
-  ],
+  "alerts": [],
   "recent_activities": [
     {
       "id": "i196676522",
@@ -592,88 +585,6 @@
         "3x 30s 239w",
         "1x 1h15m 180w",
         "1x 77s 174w"
-      ]
-    },
-    {
-      "id": "i194096562",
-      "date": "2026-10-06",
-      "name": "Zwift - Pacer Group Ride with Genie",
-      "type": "VirtualRide",
-      "duration_sec": 5430,
-      "distance_m": 57629.55,
-      "avg_watts": 187,
-      "np_watts": 190,
-      "avg_hr": 150,
-      "max_hr": 171,
-      "tss": 121,
-      "elevation_m": 358.0,
-      "avg_cadence": 87.76202,
-      "efficiency_factor": 1.2666667,
-      "decoupling": null,
-      "intensity_factor": 89.62264,
-      "zone_times": [
-        {
-          "id": "Z1",
-          "secs": 67
-        },
-        {
-          "id": "Z2",
-          "secs": 162
-        },
-        {
-          "id": "Z3",
-          "secs": 4376
-        },
-        {
-          "id": "Z4",
-          "secs": 542
-        },
-        {
-          "id": "Z5",
-          "secs": 147
-        },
-        {
-          "id": "Z6",
-          "secs": 51
-        },
-        {
-          "id": "Z7",
-          "secs": 86
-        },
-        {
-          "id": "SS",
-          "secs": 4494
-        }
-      ],
-      "variability_index": 1.0160428,
-      "ctl_snapshot": 109.67539,
-      "atl_snapshot": 117.18675,
-      "hrr": {
-        "start_index": 897,
-        "end_index": 957,
-        "start_time": 897,
-        "end_time": 957,
-        "start_bpm": 166,
-        "end_bpm": 144,
-        "hrr": 22
-      },
-      "calories": 968,
-      "interval_summary": [
-        "1x 10m2s 169w",
-        "2x 2m 178w",
-        "3x 30s 190w",
-        "3x 30s 238w",
-        "1x 15m24s 178w",
-        "2x 3m 179w",
-        "1x 60s 196w",
-        "1x 60s 254w",
-        "7x 4m2s 187w",
-        "1x 15s 363w",
-        "2x 20s 342w",
-        "2x 30s 280w",
-        "2x 4m55s 180w",
-        "1x 8m52s 189w",
-        "1x 74s 154w"
       ]
     }
   ]
