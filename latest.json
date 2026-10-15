@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T00:31:50.987015Z",
-  "activities_signature": "dd2574c189b118b0",
+  "generated_at": "2026-10-15T05:15:14.479021Z",
+  "activities_signature": "0fc69a2095a79ec6",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,23 +16,23 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "amber",
+      "acwr": "green",
       "ri": "unknown"
     },
     "red_count": 0,
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 106.8,
-    "atl": 100.8,
-    "tsb": 6.0,
-    "ramp_rate": -0.3,
-    "acwr": 0.732,
-    "acute_load_7d": 76.4,
-    "chronic_load_28d": 104.5,
-    "monotony": 2.06,
-    "strain": 1102.1,
-    "weekly_load": 535.0,
+    "ctl": 106.3,
+    "atl": 98.7,
+    "tsb": 7.6,
+    "ramp_rate": -0.5,
+    "acwr": 0.824,
+    "acute_load_7d": 88.6,
+    "chronic_load_28d": 107.5,
+    "monotony": 4.38,
+    "strain": 2715.6,
+    "weekly_load": 620.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,126 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": 0.11,
+    "ctl_slope_per_week": -0.02,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 11.9,
-      "z2_pct": 84.1,
-      "z3_pct": 4.0,
-      "z1_sec": 17720,
-      "z2_sec": 125453,
-      "z3_sec": 5965,
+      "z1_pct": 11.7,
+      "z2_pct": 84.2,
+      "z3_pct": 4.1,
+      "z1_sec": 17946,
+      "z2_sec": 129018,
+      "z3_sec": 6281,
       "classification": "Threshold",
-      "pi": -0.247,
+      "pi": -0.244,
       "window_days": 28
     },
     "7d": {
       "z1_pct": 5.5,
-      "z2_pct": 91.9,
-      "z3_pct": 2.6,
-      "z1_sec": 1744,
-      "z2_sec": 29248,
-      "z3_sec": 834,
+      "z2_pct": 91.3,
+      "z3_pct": 3.2,
+      "z1_sec": 1970,
+      "z2_sec": 32813,
+      "z3_sec": 1150,
       "classification": "Threshold",
-      "pi": -0.808,
+      "pi": -0.715,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 636,
-    "hours": 8.8,
-    "sessions": 7
+    "tss": 721,
+    "hours": 10.0,
+    "sessions": 8
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.38,
+      "message": "Monotony 4.38 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i197444562",
+      "date": "2026-10-15",
+      "name": "Zwift - Pacer Group Ride with Bernie",
+      "type": "VirtualRide",
+      "duration_sec": 4106,
+      "distance_m": 43571.01,
+      "avg_watts": 180,
+      "np_watts": 183,
+      "avg_hr": 159,
+      "max_hr": 173,
+      "tss": 85,
+      "elevation_m": 95.0,
+      "avg_cadence": 91.38191,
+      "efficiency_factor": 1.1509434,
+      "decoupling": null,
+      "intensity_factor": 86.320755,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 48
+        },
+        {
+          "id": "Z2",
+          "secs": 178
+        },
+        {
+          "id": "Z3",
+          "secs": 3215
+        },
+        {
+          "id": "Z4",
+          "secs": 350
+        },
+        {
+          "id": "Z5",
+          "secs": 188
+        },
+        {
+          "id": "Z6",
+          "secs": 128
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 1638
+        }
+      ],
+      "variability_index": 1.0166667,
+      "ctl_snapshot": 106.323204,
+      "atl_snapshot": 98.73518,
+      "hrr": {
+        "start_index": 914,
+        "end_index": 974,
+        "start_time": 914,
+        "end_time": 974,
+        "start_bpm": 170,
+        "end_bpm": 154,
+        "hrr": 16
+      },
+      "calories": 708,
+      "interval_summary": [
+        "1x 10m2s 168w",
+        "13x 2m 170w",
+        "3x 30s 189w",
+        "3x 30s 236w",
+        "1x 5m19s 175w",
+        "11x 20s 255w",
+        "1x 20s 306w",
+        "1x 41s 187w",
+        "1x 18m13s 180w",
+        "1x 72s 157w"
+      ]
+    },
     {
       "id": "i197065209",
       "date": "2026-10-14",
