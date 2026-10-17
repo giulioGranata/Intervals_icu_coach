@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T03:23:11.356650Z",
-  "activities_signature": "efc5bfcf20840842",
+  "generated_at": "2026-10-17T07:58:26.178455Z",
+  "activities_signature": "5d86cf2ea8f7dcbd",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,23 +16,23 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "amber",
+      "acwr": "green",
       "ri": "unknown"
     },
     "red_count": 0,
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 104.9,
-    "atl": 91.4,
-    "tsb": 13.4,
-    "ramp_rate": -1.5,
-    "acwr": 0.694,
-    "acute_load_7d": 71.6,
-    "chronic_load_28d": 103.1,
-    "monotony": 2.03,
-    "strain": 1017.0,
-    "weekly_load": 501.0,
+    "ctl": 104.8,
+    "atl": 93.1,
+    "tsb": 11.7,
+    "ramp_rate": -0.0,
+    "acwr": 0.809,
+    "acute_load_7d": 86.4,
+    "chronic_load_28d": 106.8,
+    "monotony": 4.11,
+    "strain": 2486.6,
+    "weekly_load": 605.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -42,43 +42,122 @@
   },
   "phase": {
     "current": "Base",
-    "confidence": "medium",
+    "confidence": "low",
     "ctl_slope_per_week": -0.14,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 11.9,
-      "z2_pct": 83.9,
-      "z3_pct": 4.2,
-      "z1_sec": 17648,
-      "z2_sec": 124023,
-      "z3_sec": 6141,
+      "z1_pct": 11.6,
+      "z2_pct": 84.3,
+      "z3_pct": 4.1,
+      "z1_sec": 17781,
+      "z2_sec": 129260,
+      "z3_sec": 6214,
       "classification": "Threshold",
-      "pi": -0.225,
+      "pi": -0.249,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 5.7,
-      "z2_pct": 91.0,
-      "z3_pct": 3.3,
-      "z1_sec": 1749,
-      "z2_sec": 28160,
-      "z3_sec": 1026,
+      "z1_pct": 5.2,
+      "z2_pct": 91.8,
+      "z3_pct": 3.0,
+      "z1_sec": 1882,
+      "z2_sec": 33397,
+      "z3_sec": 1099,
       "classification": "Threshold",
-      "pi": -0.685,
+      "pi": -0.77,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 613,
-    "hours": 8.6,
-    "sessions": 7
+    "tss": 717,
+    "hours": 10.1,
+    "sessions": 8
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.11,
+      "message": "Monotony 4.11 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i198188516",
+      "date": "2026-10-17",
+      "name": "Zwift - Pacer Group Ride with Jacques",
+      "type": "VirtualRide",
+      "duration_sec": 5442,
+      "distance_m": 58015.22,
+      "avg_watts": 175,
+      "np_watts": 176,
+      "avg_hr": 155,
+      "max_hr": 174,
+      "tss": 104,
+      "elevation_m": 176.0,
+      "avg_cadence": 92.3915,
+      "efficiency_factor": 1.1354839,
+      "decoupling": null,
+      "intensity_factor": 83.01887,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 39
+        },
+        {
+          "id": "Z2",
+          "secs": 94
+        },
+        {
+          "id": "Z3",
+          "secs": 4983
+        },
+        {
+          "id": "Z4",
+          "secs": 254
+        },
+        {
+          "id": "Z5",
+          "secs": 73
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 931
+        }
+      ],
+      "variability_index": 1.0057143,
+      "ctl_snapshot": 104.836685,
+      "atl_snapshot": 93.119576,
+      "hrr": {
+        "start_index": 5378,
+        "end_index": 5438,
+        "start_time": 5378,
+        "end_time": 5438,
+        "start_bpm": 158,
+        "end_bpm": 138,
+        "hrr": 20
+      },
+      "calories": 910,
+      "interval_summary": [
+        "5x 10m 171w",
+        "4x 2m 165w",
+        "3x 30s 184w",
+        "3x 30s 233w",
+        "1x 29m42s 178w"
+      ]
+    },
     {
       "id": "i197805665",
       "date": "2026-10-16",
