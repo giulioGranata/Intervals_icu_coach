@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T07:58:26.178455Z",
-  "activities_signature": "5d86cf2ea8f7dcbd",
+  "generated_at": "2026-10-18T00:22:11.498489Z",
+  "activities_signature": "e71150405ee1dcce",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,7 +16,7 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "green",
+      "acwr": "amber",
       "ri": "unknown"
     },
     "red_count": 0,
@@ -27,12 +27,12 @@
     "atl": 93.1,
     "tsb": 11.7,
     "ramp_rate": -0.0,
-    "acwr": 0.809,
-    "acute_load_7d": 86.4,
-    "chronic_load_28d": 106.8,
-    "monotony": 4.11,
-    "strain": 2486.6,
-    "weekly_load": 605.0,
+    "acwr": 0.698,
+    "acute_load_7d": 71.6,
+    "chronic_load_28d": 102.6,
+    "monotony": 2.03,
+    "strain": 1017.0,
+    "weekly_load": 501.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -42,49 +42,42 @@
   },
   "phase": {
     "current": "Base",
-    "confidence": "low",
-    "ctl_slope_per_week": -0.14,
+    "confidence": "medium",
+    "ctl_slope_per_week": -0.22,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 11.6,
-      "z2_pct": 84.3,
+      "z1_pct": 10.5,
+      "z2_pct": 85.4,
       "z3_pct": 4.1,
-      "z1_sec": 17781,
-      "z2_sec": 129260,
-      "z3_sec": 6214,
+      "z1_sec": 15353,
+      "z2_sec": 125215,
+      "z3_sec": 5982,
       "classification": "Threshold",
-      "pi": -0.249,
+      "pi": -0.297,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 5.2,
-      "z2_pct": 91.8,
-      "z3_pct": 3.0,
-      "z1_sec": 1882,
-      "z2_sec": 33397,
-      "z3_sec": 1099,
+      "z1_pct": 5.5,
+      "z2_pct": 91.3,
+      "z3_pct": 3.2,
+      "z1_sec": 1677,
+      "z2_sec": 27927,
+      "z3_sec": 993,
       "classification": "Threshold",
-      "pi": -0.77,
+      "pi": -0.715,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 717,
-    "hours": 10.1,
-    "sessions": 8
+    "tss": 605,
+    "hours": 8.5,
+    "sessions": 7
   },
   "upcoming_events": [],
-  "alerts": [
-    {
-      "type": "ALARM",
-      "metric": "Monotony",
-      "value": 4.11,
-      "message": "Monotony 4.11 at alarm level (≥2.5). Overuse risk."
-    }
-  ],
+  "alerts": [],
   "recent_activities": [
     {
       "id": "i198188516",
@@ -593,79 +586,6 @@
         "1x 92s 183w",
         "1x 72s 199w",
         "1x 2m31s 146w"
-      ]
-    },
-    {
-      "id": "i195633332",
-      "date": "2026-10-10",
-      "name": "Zwift - Pacer Group Ride with Jacques",
-      "type": "VirtualRide",
-      "duration_sec": 5780,
-      "distance_m": 60308.83,
-      "avg_watts": 176,
-      "np_watts": 177,
-      "avg_hr": 153,
-      "max_hr": 175,
-      "tss": 112,
-      "elevation_m": 284.0,
-      "avg_cadence": 90.9034,
-      "efficiency_factor": 1.1568627,
-      "decoupling": null,
-      "intensity_factor": 83.49056,
-      "zone_times": [
-        {
-          "id": "Z1",
-          "secs": 51
-        },
-        {
-          "id": "Z2",
-          "secs": 154
-        },
-        {
-          "id": "Z3",
-          "secs": 5196
-        },
-        {
-          "id": "Z4",
-          "secs": 274
-        },
-        {
-          "id": "Z5",
-          "secs": 102
-        },
-        {
-          "id": "Z6",
-          "secs": 4
-        },
-        {
-          "id": "Z7",
-          "secs": 0
-        },
-        {
-          "id": "SS",
-          "secs": 1284
-        }
-      ],
-      "variability_index": 1.0056819,
-      "ctl_snapshot": 108.21642,
-      "atl_snapshot": 106.70248,
-      "hrr": {
-        "start_index": 977,
-        "end_index": 1037,
-        "start_time": 977,
-        "end_time": 1037,
-        "start_bpm": 163,
-        "end_bpm": 140,
-        "hrr": 23
-      },
-      "calories": 972,
-      "interval_summary": [
-        "1x 10m9s 168w",
-        "1x 2m 175w",
-        "3x 30s 187w",
-        "3x 30s 237w",
-        "1x 1h19m 175w",
-        "1x 77s 166w"
       ]
     }
   ]
