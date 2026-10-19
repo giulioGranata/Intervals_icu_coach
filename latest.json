@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19T01:44:12.966912Z",
-  "activities_signature": "cd4da7fdc11f6b7c",
+  "generated_at": "2026-10-19T06:56:13.087460Z",
+  "activities_signature": "e1b9e2caa8824898",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,23 +16,23 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "amber",
+      "acwr": "green",
       "ri": "unknown"
     },
     "red_count": 0,
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 104.5,
-    "atl": 92.7,
-    "tsb": 11.8,
-    "ramp_rate": -0.3,
-    "acwr": 0.735,
-    "acute_load_7d": 74.6,
-    "chronic_load_28d": 101.4,
-    "monotony": 2.08,
-    "strain": 1085.8,
-    "weekly_load": 522.0,
+    "ctl": 103.8,
+    "atl": 90.6,
+    "tsb": 13.2,
+    "ramp_rate": -0.6,
+    "acwr": 0.821,
+    "acute_load_7d": 85.6,
+    "chronic_load_28d": 104.2,
+    "monotony": 4.46,
+    "strain": 2671.5,
+    "weekly_load": 599.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,127 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": -0.41,
+    "ctl_slope_per_week": -0.56,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 9.2,
-      "z2_pct": 86.9,
-      "z3_pct": 3.9,
-      "z1_sec": 13283,
-      "z2_sec": 126118,
-      "z3_sec": 5649,
+      "z1_pct": 9.0,
+      "z2_pct": 87.1,
+      "z3_pct": 3.8,
+      "z1_sec": 13473,
+      "z2_sec": 129869,
+      "z3_sec": 5711,
       "classification": "Threshold",
-      "pi": -0.384,
+      "pi": -0.406,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 5.4,
-      "z2_pct": 91.5,
-      "z3_pct": 3.1,
-      "z1_sec": 1607,
-      "z2_sec": 27430,
-      "z3_sec": 930,
+      "z1_pct": 5.3,
+      "z2_pct": 91.8,
+      "z3_pct": 2.9,
+      "z1_sec": 1797,
+      "z2_sec": 31181,
+      "z3_sec": 992,
       "classification": "Threshold",
-      "pi": -0.738,
+      "pi": -0.776,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 591,
-    "hours": 8.3,
-    "sessions": 7
+    "tss": 668,
+    "hours": 9.4,
+    "sessions": 8
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.46,
+      "message": "Monotony 4.46 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i198857189",
+      "date": "2026-10-19",
+      "name": "Zwift - Pacer Group Ride with Genie",
+      "type": "VirtualRide",
+      "duration_sec": 4002,
+      "distance_m": 41756.23,
+      "avg_watts": 174,
+      "np_watts": 176,
+      "avg_hr": 152,
+      "max_hr": 170,
+      "tss": 77,
+      "elevation_m": 139.0,
+      "avg_cadence": 91.11242,
+      "efficiency_factor": 1.1578947,
+      "decoupling": null,
+      "intensity_factor": 83.01887,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 58
+        },
+        {
+          "id": "Z2",
+          "secs": 132
+        },
+        {
+          "id": "Z3",
+          "secs": 3543
+        },
+        {
+          "id": "Z4",
+          "secs": 208
+        },
+        {
+          "id": "Z5",
+          "secs": 59
+        },
+        {
+          "id": "Z6",
+          "secs": 3
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 1066
+        }
+      ],
+      "variability_index": 1.0114943,
+      "ctl_snapshot": 103.840866,
+      "atl_snapshot": 90.6137,
+      "hrr": {
+        "start_index": 965,
+        "end_index": 1025,
+        "start_time": 965,
+        "end_time": 1025,
+        "start_bpm": 165,
+        "end_bpm": 154,
+        "hrr": 11
+      },
+      "calories": 668,
+      "interval_summary": [
+        "1x 10m2s 167w",
+        "1x 2m 169w",
+        "3x 30s 179w",
+        "3x 30s 231w",
+        "8x 5m1s 175w",
+        "6x 60s 165w",
+        "1x 60s 139w",
+        "1x 40s 179w",
+        "1x 99s 188w",
+        "1x 52s 174w",
+        "1x 79s 170w"
+      ]
+    },
     {
       "id": "i198516850",
       "date": "2026-10-18",
