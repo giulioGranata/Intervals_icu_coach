@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T07:35:13.638210Z",
-  "activities_signature": "36ed6060586f5e1b",
+  "generated_at": "2026-10-21T00:08:50.838311Z",
+  "activities_signature": "65a56aed006b5aa1",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,7 +16,7 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "green",
+      "acwr": "amber",
       "ri": "unknown"
     },
     "red_count": 0,
@@ -27,12 +27,12 @@
     "atl": 89.6,
     "tsb": 13.8,
     "ramp_rate": -0.5,
-    "acwr": 0.806,
-    "acute_load_7d": 82.7,
-    "chronic_load_28d": 102.7,
-    "monotony": 4.65,
-    "strain": 2692.4,
-    "weekly_load": 579.0,
+    "acwr": 0.707,
+    "acute_load_7d": 69.0,
+    "chronic_load_28d": 97.6,
+    "monotony": 2.1,
+    "strain": 1014.3,
+    "weekly_load": 483.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,48 +43,41 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": -0.79,
+    "ctl_slope_per_week": -1.05,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 9.2,
+      "z1_pct": 9.4,
       "z2_pct": 87.0,
-      "z3_pct": 3.9,
-      "z1_sec": 13483,
-      "z2_sec": 127616,
-      "z3_sec": 5663,
+      "z3_pct": 3.6,
+      "z1_sec": 13234,
+      "z2_sec": 122748,
+      "z3_sec": 5043,
       "classification": "Threshold",
-      "pi": -0.385,
+      "pi": -0.41,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 5.0,
-      "z2_pct": 92.2,
-      "z3_pct": 2.8,
-      "z1_sec": 1737,
-      "z2_sec": 31821,
-      "z3_sec": 959,
+      "z1_pct": 5.1,
+      "z2_pct": 92.4,
+      "z3_pct": 2.5,
+      "z1_sec": 1499,
+      "z2_sec": 27246,
+      "z3_sec": 733,
       "classification": "Threshold",
-      "pi": -0.819,
+      "pi": -0.86,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 682,
-    "hours": 9.6,
-    "sessions": 8
+    "tss": 579,
+    "hours": 8.2,
+    "sessions": 7
   },
   "upcoming_events": [],
-  "alerts": [
-    {
-      "type": "ALARM",
-      "metric": "Monotony",
-      "value": 4.65,
-      "message": "Monotony 4.65 at alarm level (≥2.5). Overuse risk."
-    }
-  ],
+  "alerts": [],
   "recent_activities": [
     {
       "id": "i199313985",
@@ -599,80 +592,6 @@
         "1x 29m59s 174w",
         "1x 36m21s 173w",
         "1x 2m4s 148w"
-      ]
-    },
-    {
-      "id": "i196676522",
-      "date": "2026-10-13",
-      "name": "Zwift - Pacer Group Ride with Jacques",
-      "type": "VirtualRide",
-      "duration_sec": 5038,
-      "distance_m": 54764.15,
-      "avg_watts": 180,
-      "np_watts": 182,
-      "avg_hr": 154,
-      "max_hr": 171,
-      "tss": 103,
-      "elevation_m": 185.0,
-      "avg_cadence": 88.3849,
-      "efficiency_factor": 1.1818181,
-      "decoupling": null,
-      "intensity_factor": 85.84906,
-      "zone_times": [
-        {
-          "id": "Z1",
-          "secs": 60
-        },
-        {
-          "id": "Z2",
-          "secs": 178
-        },
-        {
-          "id": "Z3",
-          "secs": 3845
-        },
-        {
-          "id": "Z4",
-          "secs": 730
-        },
-        {
-          "id": "Z5",
-          "secs": 226
-        },
-        {
-          "id": "Z6",
-          "secs": 0
-        },
-        {
-          "id": "Z7",
-          "secs": 0
-        },
-        {
-          "id": "SS",
-          "secs": 1196
-        }
-      ],
-      "variability_index": 1.0111111,
-      "ctl_snapshot": 107.09811,
-      "atl_snapshot": 101.58836,
-      "hrr": {
-        "start_index": 918,
-        "end_index": 978,
-        "start_time": 918,
-        "end_time": 978,
-        "start_bpm": 171,
-        "end_bpm": 150,
-        "hrr": 21
-      },
-      "calories": 866,
-      "interval_summary": [
-        "6x 9m55s 174w",
-        "2x 2m 177w",
-        "3x 30s 187w",
-        "3x 30s 238w",
-        "1x 5m58s 173w",
-        "5x 2m 210w",
-        "1x 92s 152w"
       ]
     }
   ]
