@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-21T00:08:50.838311Z",
-  "activities_signature": "65a56aed006b5aa1",
+  "generated_at": "2026-10-21T09:51:57.115094Z",
+  "activities_signature": "28caed8aa4599bdc",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -16,23 +16,23 @@
       "rhr": "unknown",
       "sleep": "unknown",
       "tsb": "green",
-      "acwr": "amber",
+      "acwr": "green",
       "ri": "unknown"
     },
     "red_count": 0,
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 103.4,
-    "atl": 89.6,
-    "tsb": 13.8,
-    "ramp_rate": -0.5,
-    "acwr": 0.707,
-    "acute_load_7d": 69.0,
-    "chronic_load_28d": 97.6,
-    "monotony": 2.1,
-    "strain": 1014.3,
-    "weekly_load": 483.0,
+    "ctl": 103.1,
+    "atl": 89.8,
+    "tsb": 13.3,
+    "ramp_rate": -0.3,
+    "acwr": 0.813,
+    "acute_load_7d": 82.0,
+    "chronic_load_28d": 100.8,
+    "monotony": 4.73,
+    "strain": 2715.0,
+    "weekly_load": 574.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,122 @@
   "phase": {
     "current": "Base",
     "confidence": "low",
-    "ctl_slope_per_week": -1.05,
+    "ctl_slope_per_week": -1.08,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 9.4,
-      "z2_pct": 87.0,
-      "z3_pct": 3.6,
-      "z1_sec": 13234,
-      "z2_sec": 122748,
-      "z3_sec": 5043,
+      "z1_pct": 9.3,
+      "z2_pct": 87.2,
+      "z3_pct": 3.5,
+      "z1_sec": 13549,
+      "z2_sec": 127230,
+      "z3_sec": 5131,
       "classification": "Threshold",
-      "pi": -0.41,
+      "pi": -0.428,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 5.1,
-      "z2_pct": 92.4,
-      "z3_pct": 2.5,
-      "z1_sec": 1499,
-      "z2_sec": 27246,
-      "z3_sec": 733,
+      "z1_pct": 5.3,
+      "z2_pct": 92.3,
+      "z3_pct": 2.4,
+      "z1_sec": 1814,
+      "z2_sec": 31728,
+      "z3_sec": 821,
       "classification": "Threshold",
-      "pi": -0.86,
+      "pi": -0.861,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 579,
-    "hours": 8.2,
-    "sessions": 7
+    "tss": 670,
+    "hours": 9.5,
+    "sessions": 8
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.73,
+      "message": "Monotony 4.73 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i199817908",
+      "date": "2026-10-21",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 4884,
+      "distance_m": 50468.84,
+      "avg_watts": 173,
+      "np_watts": 174,
+      "avg_hr": 151,
+      "max_hr": 172,
+      "tss": 91,
+      "elevation_m": 181.0,
+      "avg_cadence": 91.91207,
+      "efficiency_factor": 1.1523179,
+      "decoupling": null,
+      "intensity_factor": 82.07547,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 113
+        },
+        {
+          "id": "Z2",
+          "secs": 202
+        },
+        {
+          "id": "Z3",
+          "secs": 4188
+        },
+        {
+          "id": "Z4",
+          "secs": 294
+        },
+        {
+          "id": "Z5",
+          "secs": 82
+        },
+        {
+          "id": "Z6",
+          "secs": 6
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 926
+        }
+      ],
+      "variability_index": 1.0057803,
+      "ctl_snapshot": 103.05993,
+      "atl_snapshot": 89.7865,
+      "hrr": {
+        "start_index": 625,
+        "end_index": 685,
+        "start_time": 625,
+        "end_time": 685,
+        "start_bpm": 163,
+        "end_bpm": 151,
+        "hrr": 12
+      },
+      "calories": 805,
+      "interval_summary": [
+        "1x 10m22s 163w",
+        "1x 2m 171w",
+        "3x 30s 186w",
+        "3x 30s 233w",
+        "1x 1h4m 172w",
+        "1x 76s 158w"
+      ]
+    },
     {
       "id": "i199313985",
       "date": "2026-10-20",
