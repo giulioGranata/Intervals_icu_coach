@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-29T06:29:42.990540Z",
-  "activities_signature": "2ff59075d0e0e5a1",
+  "generated_at": "2026-10-30T02:47:22.116692Z",
+  "activities_signature": "abea3cbb06223485",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -27,12 +27,12 @@
     "atl": 87.4,
     "tsb": 12.8,
     "ramp_rate": -0.6,
-    "acwr": 0.921,
-    "acute_load_7d": 84.9,
-    "chronic_load_28d": 92.1,
-    "monotony": 4.11,
-    "strain": 2441.3,
-    "weekly_load": 594.0,
+    "acwr": 0.875,
+    "acute_load_7d": 79.0,
+    "chronic_load_28d": 90.3,
+    "monotony": 2.33,
+    "strain": 1288.5,
+    "weekly_load": 553.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -42,47 +42,47 @@
   },
   "phase": {
     "current": "Deload",
-    "confidence": "medium",
-    "ctl_slope_per_week": -2.23,
+    "confidence": "low",
+    "ctl_slope_per_week": -1.96,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 7.4,
-      "z2_pct": 89.9,
-      "z3_pct": 2.7,
-      "z1_sec": 10136,
-      "z2_sec": 123634,
-      "z3_sec": 3733,
+      "z1_pct": 7.5,
+      "z2_pct": 90.0,
+      "z3_pct": 2.5,
+      "z1_sec": 9879,
+      "z2_sec": 118873,
+      "z3_sec": 3270,
       "classification": "Threshold",
-      "pi": -0.653,
+      "pi": -0.681,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 6.8,
-      "z2_pct": 91.0,
-      "z3_pct": 2.1,
-      "z1_sec": 2539,
-      "z2_sec": 33839,
-      "z3_sec": 793,
+      "z1_pct": 6.7,
+      "z2_pct": 91.7,
+      "z3_pct": 1.5,
+      "z1_sec": 2169,
+      "z2_sec": 29653,
+      "z3_sec": 499,
       "classification": "Threshold",
-      "pi": -0.804,
+      "pi": -0.96,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 689,
-    "hours": 10.3,
-    "sessions": 8
+    "tss": 594,
+    "hours": 9.0,
+    "sessions": 7
   },
   "upcoming_events": [],
   "alerts": [
     {
-      "type": "ALARM",
+      "type": "WARNING",
       "metric": "Monotony",
-      "value": 4.11,
-      "message": "Monotony 4.11 at alarm level (≥2.5). Overuse risk."
+      "value": 2.33,
+      "message": "Monotony 2.33 approaching alarm threshold."
     }
   ],
   "recent_activities": [
@@ -597,83 +597,6 @@
         "3x 30s 182w",
         "3x 30s 230w",
         "1x 15m53s 195w"
-      ]
-    },
-    {
-      "id": "i200234585",
-      "date": "2026-10-22",
-      "name": "Zwift - Twelve Spikes",
-      "type": "VirtualRide",
-      "duration_sec": 4849,
-      "distance_m": 52518.94,
-      "avg_watts": 175,
-      "np_watts": 178,
-      "avg_hr": 153,
-      "max_hr": 175,
-      "tss": 95,
-      "elevation_m": 85.0,
-      "avg_cadence": 93.46873,
-      "efficiency_factor": 1.1633987,
-      "decoupling": null,
-      "intensity_factor": 83.962265,
-      "zone_times": [
-        {
-          "id": "Z1",
-          "secs": 68
-        },
-        {
-          "id": "Z2",
-          "secs": 302
-        },
-        {
-          "id": "Z3",
-          "secs": 3825
-        },
-        {
-          "id": "Z4",
-          "secs": 361
-        },
-        {
-          "id": "Z5",
-          "secs": 249
-        },
-        {
-          "id": "Z6",
-          "secs": 45
-        },
-        {
-          "id": "Z7",
-          "secs": 0
-        },
-        {
-          "id": "SS",
-          "secs": 426
-        }
-      ],
-      "variability_index": 1.0171429,
-      "ctl_snapshot": 102.87029,
-      "atl_snapshot": 90.48053,
-      "hrr": {
-        "start_index": 934,
-        "end_index": 994,
-        "start_time": 934,
-        "end_time": 994,
-        "start_bpm": 175,
-        "end_bpm": 146,
-        "hrr": 29
-      },
-      "calories": 811,
-      "interval_summary": [
-        "1x 10m30s 162w",
-        "1x 2m 173w",
-        "2x 30s 177w",
-        "8x 30s 222w",
-        "1x 6m51s 166w",
-        "14x 2m41s 169w",
-        "3x 60s 199w",
-        "4x 20s 248w",
-        "4x 15s 260w",
-        "1x 13m29s 170w"
       ]
     }
   ]
