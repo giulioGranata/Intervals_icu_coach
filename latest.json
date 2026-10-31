@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T06:19:07.170638Z",
-  "activities_signature": "504e36b164932f65",
+  "generated_at": "2026-10-31T12:56:38.078481Z",
+  "activities_signature": "26435c7f26a832d2",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 97.7,
-    "atl": 77.6,
-    "tsb": 20.1,
-    "ramp_rate": -1.0,
-    "acwr": 0.859,
-    "acute_load_7d": 76.7,
-    "chronic_load_28d": 89.4,
-    "monotony": 3.77,
-    "strain": 2024.5,
-    "weekly_load": 537.0,
+    "ctl": 99.0,
+    "atl": 84.9,
+    "tsb": 14.0,
+    "ramp_rate": 0.0,
+    "acwr": 0.926,
+    "acute_load_7d": 84.6,
+    "chronic_load_28d": 91.3,
+    "monotony": 3.89,
+    "strain": 2302.9,
+    "weekly_load": 592.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,49 +43,121 @@
   "phase": {
     "current": "Deload",
     "confidence": "medium",
-    "ctl_slope_per_week": -2.58,
+    "ctl_slope_per_week": -2.26,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 8.5,
-      "z2_pct": 89.0,
+      "z1_pct": 8.7,
+      "z2_pct": 88.7,
       "z3_pct": 2.5,
-      "z1_sec": 11476,
-      "z2_sec": 120042,
-      "z3_sec": 3393,
+      "z1_sec": 12020,
+      "z2_sec": 122192,
+      "z3_sec": 3511,
       "classification": "Threshold",
-      "pi": -0.622,
+      "pi": -0.61,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 10.6,
-      "z2_pct": 87.5,
-      "z3_pct": 1.9,
-      "z1_sec": 3761,
-      "z2_sec": 30940,
-      "z3_sec": 655,
+      "z1_pct": 11.3,
+      "z2_pct": 86.7,
+      "z3_pct": 2.0,
+      "z1_sec": 4305,
+      "z2_sec": 33090,
+      "z3_sec": 773,
       "classification": "Threshold",
-      "pi": -0.638,
+      "pi": -0.584,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 648,
-    "hours": 9.8,
-    "sessions": 8
+    "tss": 703,
+    "hours": 10.6,
+    "sessions": 9
   },
   "upcoming_events": [],
   "alerts": [
     {
       "type": "ALARM",
       "metric": "Monotony",
-      "value": 3.77,
-      "message": "Monotony 3.77 at alarm level (≥2.5). Overuse risk."
+      "value": 3.89,
+      "message": "Monotony 3.89 at alarm level (≥2.5). Overuse risk."
     }
   ],
   "recent_activities": [
+    {
+      "id": "i203795506",
+      "date": "2026-10-31",
+      "name": "Zwift - Group Ride: SYN CLUB CIRCUIT - Week 3",
+      "type": "VirtualRide",
+      "duration_sec": 2811,
+      "distance_m": 29703.71,
+      "avg_watts": 176,
+      "np_watts": 178,
+      "avg_hr": 140,
+      "max_hr": 158,
+      "tss": 55,
+      "elevation_m": 159.0,
+      "avg_cadence": 98.16129,
+      "efficiency_factor": 1.2714286,
+      "decoupling": null,
+      "intensity_factor": 83.962265,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 97
+        },
+        {
+          "id": "Z2",
+          "secs": 447
+        },
+        {
+          "id": "Z3",
+          "secs": 1499
+        },
+        {
+          "id": "Z4",
+          "secs": 651
+        },
+        {
+          "id": "Z5",
+          "secs": 113
+        },
+        {
+          "id": "Z6",
+          "secs": 4
+        },
+        {
+          "id": "Z7",
+          "secs": 1
+        },
+        {
+          "id": "SS",
+          "secs": 937
+        }
+      ],
+      "variability_index": 1.0113636,
+      "ctl_snapshot": 98.98393,
+      "atl_snapshot": 84.94419,
+      "hrr": {
+        "start_index": 520,
+        "end_index": 580,
+        "start_time": 520,
+        "end_time": 580,
+        "start_bpm": 153,
+        "end_bpm": 139,
+        "hrr": 14
+      },
+      "calories": 487,
+      "interval_summary": [
+        "1x 5m31s 173w",
+        "2x 92s 202w",
+        "2x 2m9s 194w",
+        "1x 4m51s 169w",
+        "2x 3m15s 181w"
+      ]
+    },
     {
       "id": "i203788798",
       "date": "2026-10-31",
@@ -138,8 +210,8 @@
         }
       ],
       "variability_index": 1.0175439,
-      "ctl_snapshot": 97.68988,
-      "atl_snapshot": 77.622475,
+      "ctl_snapshot": 98.98393,
+      "atl_snapshot": 84.94419,
       "hrr": {
         "start_index": 2686,
         "end_index": 2746,
