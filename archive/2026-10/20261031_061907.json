@@ -1,0 +1,680 @@
+{
+  "generated_at": "2026-10-31T06:19:07.170638Z",
+  "activities_signature": "504e36b164932f65",
+  "protocol_version": "11.24",
+  "script_version": "3.95",
+  "athlete": {
+    "id": "i153108",
+    "name": "Giulio Granata"
+  },
+  "readiness": {
+    "decision": "go",
+    "priority": "P3",
+    "confidence": "medium",
+    "signals": {
+      "hrv": "unknown",
+      "rhr": "unknown",
+      "sleep": "unknown",
+      "tsb": "green",
+      "acwr": "green",
+      "ri": "unknown"
+    },
+    "red_count": 0,
+    "reason": "All signals within acceptable range"
+  },
+  "metrics": {
+    "ctl": 97.7,
+    "atl": 77.6,
+    "tsb": 20.1,
+    "ramp_rate": -1.0,
+    "acwr": 0.859,
+    "acute_load_7d": 76.7,
+    "chronic_load_28d": 89.4,
+    "monotony": 3.77,
+    "strain": 2024.5,
+    "weekly_load": 537.0,
+    "recovery_index": null,
+    "hrv_today": null,
+    "hrv_baseline": null,
+    "rhr_today": null,
+    "rhr_baseline": null,
+    "sleep_hours": null
+  },
+  "phase": {
+    "current": "Deload",
+    "confidence": "medium",
+    "ctl_slope_per_week": -2.58,
+    "hard_day_density": 0.0,
+    "days_to_next_race": null
+  },
+  "tid": {
+    "28d": {
+      "z1_pct": 8.5,
+      "z2_pct": 89.0,
+      "z3_pct": 2.5,
+      "z1_sec": 11476,
+      "z2_sec": 120042,
+      "z3_sec": 3393,
+      "classification": "Threshold",
+      "pi": -0.622,
+      "window_days": 28
+    },
+    "7d": {
+      "z1_pct": 10.6,
+      "z2_pct": 87.5,
+      "z3_pct": 1.9,
+      "z1_sec": 3761,
+      "z2_sec": 30940,
+      "z3_sec": 655,
+      "classification": "Threshold",
+      "pi": -0.638,
+      "window_days": 7
+    }
+  },
+  "weekly_totals": {
+    "tss": 648,
+    "hours": 9.8,
+    "sessions": 8
+  },
+  "upcoming_events": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 3.77,
+      "message": "Monotony 3.77 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
+  "recent_activities": [
+    {
+      "id": "i203788798",
+      "date": "2026-10-31",
+      "name": "Zwift - Pacer Group Ride with Constance",
+      "type": "VirtualRide",
+      "duration_sec": 3054,
+      "distance_m": 33015.48,
+      "avg_watts": 171,
+      "np_watts": 174,
+      "avg_hr": 129,
+      "max_hr": 166,
+      "tss": 57,
+      "elevation_m": 49.0,
+      "avg_cadence": 95.59771,
+      "efficiency_factor": 1.3488373,
+      "decoupling": null,
+      "intensity_factor": 82.07547,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 51
+        },
+        {
+          "id": "Z2",
+          "secs": 1460
+        },
+        {
+          "id": "Z3",
+          "secs": 1018
+        },
+        {
+          "id": "Z4",
+          "secs": 358
+        },
+        {
+          "id": "Z5",
+          "secs": 128
+        },
+        {
+          "id": "Z6",
+          "secs": 40
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 478
+        }
+      ],
+      "variability_index": 1.0175439,
+      "ctl_snapshot": 97.68988,
+      "atl_snapshot": 77.622475,
+      "hrr": {
+        "start_index": 2686,
+        "end_index": 2746,
+        "start_time": 2686,
+        "end_time": 2746,
+        "start_bpm": 160,
+        "end_bpm": 135,
+        "hrr": 25
+      },
+      "calories": 499,
+      "interval_summary": [
+        "1x 10m7s 159w",
+        "2x 2m 165w",
+        "3x 30s 174w",
+        "3x 30s 227w",
+        "2x 79s 155w",
+        "1x 60s 228w",
+        "2x 3m 173w",
+        "1x 4m 201w",
+        "5x 10s 296w",
+        "4x 4m50s 159w"
+      ]
+    },
+    {
+      "id": "i203425414",
+      "date": "2026-10-30",
+      "name": "Zwift - Pacer Group Ride with Sofia",
+      "type": "VirtualRide",
+      "duration_sec": 1834,
+      "distance_m": 20118.0,
+      "avg_watts": 180,
+      "np_watts": 182,
+      "avg_hr": 154,
+      "max_hr": 173,
+      "tss": 38,
+      "elevation_m": 27.0,
+      "avg_cadence": 92.87343,
+      "efficiency_factor": 1.1818181,
+      "decoupling": null,
+      "intensity_factor": 85.84906,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 44
+        },
+        {
+          "id": "Z2",
+          "secs": 180
+        },
+        {
+          "id": "Z3",
+          "secs": 1104
+        },
+        {
+          "id": "Z4",
+          "secs": 435
+        },
+        {
+          "id": "Z5",
+          "secs": 70
+        },
+        {
+          "id": "Z6",
+          "secs": 2
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 1000
+        }
+      ],
+      "variability_index": 1.0111111,
+      "ctl_snapshot": 98.67031,
+      "atl_snapshot": 80.78937,
+      "hrr": null,
+      "calories": 315,
+      "interval_summary": [
+        "1x 10m2s 165w",
+        "1x 2m 168w",
+        "3x 30s 177w",
+        "3x 30s 229w",
+        "1x 15m33s 184w"
+      ]
+    },
+    {
+      "id": "i203015562",
+      "date": "2026-10-29",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 4316,
+      "distance_m": 45825.65,
+      "avg_watts": 166,
+      "np_watts": 169,
+      "avg_hr": 146,
+      "max_hr": 167,
+      "tss": 76,
+      "elevation_m": 94.0,
+      "avg_cadence": 92.64334,
+      "efficiency_factor": 1.1575342,
+      "decoupling": null,
+      "intensity_factor": 79.71698,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 136
+        },
+        {
+          "id": "Z2",
+          "secs": 200
+        },
+        {
+          "id": "Z3",
+          "secs": 3641
+        },
+        {
+          "id": "Z4",
+          "secs": 186
+        },
+        {
+          "id": "Z5",
+          "secs": 73
+        },
+        {
+          "id": "Z6",
+          "secs": 81
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 270
+        }
+      ],
+      "variability_index": 1.0180722,
+      "ctl_snapshot": 100.13218,
+      "atl_snapshot": 87.36031,
+      "hrr": {
+        "start_index": 3045,
+        "end_index": 3105,
+        "start_time": 3045,
+        "end_time": 3105,
+        "start_bpm": 157,
+        "end_bpm": 139,
+        "hrr": 18
+      },
+      "calories": 684,
+      "interval_summary": [
+        "1x 10m21s 161w",
+        "2x 1m57s 159w",
+        "3x 30s 168w",
+        "1x 30s 209w",
+        "1x 30s 123w",
+        "1x 30s 236w",
+        "9x 4m47s 163w",
+        "8x 15s 257w",
+        "1x 15s 297w",
+        "1x 44s 171w",
+        "1x 8m40s 157w"
+      ]
+    },
+    {
+      "id": "i202600297",
+      "date": "2026-10-28",
+      "name": "Zwift - Pacer Group Ride with Sofia",
+      "type": "VirtualRide",
+      "duration_sec": 5058,
+      "distance_m": 54342.93,
+      "avg_watts": 170,
+      "np_watts": 171,
+      "avg_hr": 146,
+      "max_hr": 168,
+      "tss": 91,
+      "elevation_m": 81.0,
+      "avg_cadence": 92.66225,
+      "efficiency_factor": 1.1712328,
+      "decoupling": null,
+      "intensity_factor": 80.66038,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 91
+        },
+        {
+          "id": "Z2",
+          "secs": 190
+        },
+        {
+          "id": "Z3",
+          "secs": 4557
+        },
+        {
+          "id": "Z4",
+          "secs": 163
+        },
+        {
+          "id": "Z5",
+          "secs": 58
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 657
+        }
+      ],
+      "variability_index": 1.0058824,
+      "ctl_snapshot": 100.713646,
+      "atl_snapshot": 89.10486,
+      "hrr": {
+        "start_index": 916,
+        "end_index": 976,
+        "start_time": 916,
+        "end_time": 976,
+        "start_bpm": 168,
+        "end_bpm": 147,
+        "hrr": 21
+      },
+      "calories": 821,
+      "interval_summary": [
+        "1x 10m11s 162w",
+        "1x 2m 167w",
+        "3x 30s 178w",
+        "3x 30s 229w",
+        "1x 1h9m 169w"
+      ]
+    },
+    {
+      "id": "i202160651",
+      "date": "2026-10-27",
+      "name": "Zwift - Pacer Group Ride with Sofia",
+      "type": "VirtualRide",
+      "duration_sec": 4819,
+      "distance_m": 52147.23,
+      "avg_watts": 173,
+      "np_watts": 175,
+      "avg_hr": 145,
+      "max_hr": 165,
+      "tss": 91,
+      "elevation_m": 78.0,
+      "avg_cadence": 91.28892,
+      "efficiency_factor": 1.2068965,
+      "decoupling": null,
+      "intensity_factor": 82.54717,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 83
+        },
+        {
+          "id": "Z2",
+          "secs": 265
+        },
+        {
+          "id": "Z3",
+          "secs": 3895
+        },
+        {
+          "id": "Z4",
+          "secs": 539
+        },
+        {
+          "id": "Z5",
+          "secs": 33
+        },
+        {
+          "id": "Z6",
+          "secs": 5
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 802
+        }
+      ],
+      "variability_index": 1.0115607,
+      "ctl_snapshot": 100.9477,
+      "atl_snapshot": 88.813835,
+      "hrr": {
+        "start_index": 3038,
+        "end_index": 3098,
+        "start_time": 3038,
+        "end_time": 3098,
+        "start_bpm": 165,
+        "end_bpm": 140,
+        "hrr": 25
+      },
+      "calories": 797,
+      "interval_summary": [
+        "1x 10m10s 164w",
+        "7x 2m 174w",
+        "3x 30s 170w",
+        "3x 30s 222w",
+        "1x 26m23s 167w",
+        "6x 60s 208w",
+        "1x 5m 159w",
+        "1x 21s 141w",
+        "1x 70s 165w",
+        "1x 14m16s 173w"
+      ]
+    },
+    {
+      "id": "i201757625",
+      "date": "2026-10-26",
+      "name": "Zwift - Pacer Group Ride with Taylor",
+      "type": "VirtualRide",
+      "duration_sec": 4521,
+      "distance_m": 48773.77,
+      "avg_watts": 172,
+      "np_watts": 173,
+      "avg_hr": 145,
+      "max_hr": 166,
+      "tss": 84,
+      "elevation_m": 73.0,
+      "avg_cadence": 94.20071,
+      "efficiency_factor": 1.1931034,
+      "decoupling": null,
+      "intensity_factor": 81.603775,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 72
+        },
+        {
+          "id": "Z2",
+          "secs": 122
+        },
+        {
+          "id": "Z3",
+          "secs": 4028
+        },
+        {
+          "id": "Z4",
+          "secs": 236
+        },
+        {
+          "id": "Z5",
+          "secs": 57
+        },
+        {
+          "id": "Z6",
+          "secs": 7
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 823
+        }
+      ],
+      "variability_index": 1.005814,
+      "ctl_snapshot": 101.18739,
+      "atl_snapshot": 88.47812,
+      "hrr": {
+        "start_index": 912,
+        "end_index": 972,
+        "start_time": 912,
+        "end_time": 972,
+        "start_bpm": 166,
+        "end_bpm": 145,
+        "hrr": 21
+      },
+      "calories": 743,
+      "interval_summary": [
+        "1x 10m11s 164w",
+        "1x 2m 164w",
+        "3x 30s 180w",
+        "3x 30s 227w",
+        "8x 5m2s 173w",
+        "7x 60s 164w",
+        "1x 68s 166w",
+        "1x 11m45s 170w"
+      ]
+    },
+    {
+      "id": "i201309450",
+      "date": "2026-10-25",
+      "name": "Zwift - Pacer Group Ride with Taylor",
+      "type": "VirtualRide",
+      "duration_sec": 5521,
+      "distance_m": 59324.13,
+      "avg_watts": 170,
+      "np_watts": 171,
+      "avg_hr": 143,
+      "max_hr": 170,
+      "tss": 100,
+      "elevation_m": 91.0,
+      "avg_cadence": 92.77244,
+      "efficiency_factor": 1.1958042,
+      "decoupling": null,
+      "intensity_factor": 80.66038,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 115
+        },
+        {
+          "id": "Z2",
+          "secs": 341
+        },
+        {
+          "id": "Z3",
+          "secs": 4702
+        },
+        {
+          "id": "Z4",
+          "secs": 302
+        },
+        {
+          "id": "Z5",
+          "secs": 58
+        },
+        {
+          "id": "Z6",
+          "secs": 4
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 315
+        }
+      ],
+      "variability_index": 1.0058824,
+      "ctl_snapshot": 101.601524,
+      "atl_snapshot": 89.1658,
+      "hrr": {
+        "start_index": 2587,
+        "end_index": 2647,
+        "start_time": 2587,
+        "end_time": 2647,
+        "start_bpm": 153,
+        "end_bpm": 135,
+        "hrr": 18
+      },
+      "calories": 897,
+      "interval_summary": [
+        "1x 10m24s 157w",
+        "8x 2m 171w",
+        "11x 30s 173w",
+        "3x 30s 228w",
+        "1x 14m49s 172w",
+        "3x 8m 166w",
+        "8x 90s 171w",
+        "2x 3m55s 173w"
+      ]
+    },
+    {
+      "id": "i200947533",
+      "date": "2026-10-24",
+      "name": "Zwift - Pacer Group Ride with Coco",
+      "type": "VirtualRide",
+      "duration_sec": 6225,
+      "distance_m": 66028.09,
+      "avg_watts": 169,
+      "np_watts": 170,
+      "avg_hr": 144,
+      "max_hr": 165,
+      "tss": 111,
+      "elevation_m": 215.0,
+      "avg_cadence": 90.32578,
+      "efficiency_factor": 1.1805556,
+      "decoupling": null,
+      "intensity_factor": 80.18868,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 120
+        },
+        {
+          "id": "Z2",
+          "secs": 291
+        },
+        {
+          "id": "Z3",
+          "secs": 5564
+        },
+        {
+          "id": "Z4",
+          "secs": 212
+        },
+        {
+          "id": "Z5",
+          "secs": 37
+        },
+        {
+          "id": "Z6",
+          "secs": 2
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 368
+        }
+      ],
+      "variability_index": 1.0059172,
+      "ctl_snapshot": 101.640114,
+      "atl_snapshot": 87.502045,
+      "hrr": {
+        "start_index": 611,
+        "end_index": 671,
+        "start_time": 611,
+        "end_time": 671,
+        "start_bpm": 156,
+        "end_bpm": 138,
+        "hrr": 18
+      },
+      "calories": 1003,
+      "interval_summary": [
+        "1x 10m7s 164w",
+        "1x 2m 164w",
+        "3x 30s 177w",
+        "3x 30s 223w",
+        "1x 1h28m 167w"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T00:38:52.132984Z",
-  "activities_signature": "9005bc48ff3c6a48",
+  "generated_at": "2026-10-31T06:19:07.170638Z",
+  "activities_signature": "504e36b164932f65",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 98.7,
-    "atl": 80.8,
-    "tsb": 17.9,
-    "ramp_rate": -1.5,
-    "acwr": 0.785,
-    "acute_load_7d": 68.6,
-    "chronic_load_28d": 87.3,
-    "monotony": 2.04,
-    "strain": 979.2,
-    "weekly_load": 480.0,
+    "ctl": 97.7,
+    "atl": 77.6,
+    "tsb": 20.1,
+    "ramp_rate": -1.0,
+    "acwr": 0.859,
+    "acute_load_7d": 76.7,
+    "chronic_load_28d": 89.4,
+    "monotony": 3.77,
+    "strain": 2024.5,
+    "weekly_load": 537.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,126 @@
   "phase": {
     "current": "Deload",
     "confidence": "medium",
-    "ctl_slope_per_week": -2.42,
+    "ctl_slope_per_week": -2.58,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 7.6,
-      "z2_pct": 90.0,
-      "z3_pct": 2.4,
-      "z1_sec": 9965,
-      "z2_sec": 118666,
-      "z3_sec": 3225,
+      "z1_pct": 8.5,
+      "z2_pct": 89.0,
+      "z3_pct": 2.5,
+      "z1_sec": 11476,
+      "z2_sec": 120042,
+      "z3_sec": 3393,
       "classification": "Threshold",
-      "pi": -0.693,
+      "pi": -0.622,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 7.0,
-      "z2_pct": 91.5,
-      "z3_pct": 1.5,
-      "z1_sec": 2250,
-      "z2_sec": 29564,
-      "z3_sec": 487,
+      "z1_pct": 10.6,
+      "z2_pct": 87.5,
+      "z3_pct": 1.9,
+      "z1_sec": 3761,
+      "z2_sec": 30940,
+      "z3_sec": 655,
       "classification": "Threshold",
-      "pi": -0.94,
+      "pi": -0.638,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 591,
-    "hours": 9.0,
-    "sessions": 7
+    "tss": 648,
+    "hours": 9.8,
+    "sessions": 8
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 3.77,
+      "message": "Monotony 3.77 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i203788798",
+      "date": "2026-10-31",
+      "name": "Zwift - Pacer Group Ride with Constance",
+      "type": "VirtualRide",
+      "duration_sec": 3054,
+      "distance_m": 33015.48,
+      "avg_watts": 171,
+      "np_watts": 174,
+      "avg_hr": 129,
+      "max_hr": 166,
+      "tss": 57,
+      "elevation_m": 49.0,
+      "avg_cadence": 95.59771,
+      "efficiency_factor": 1.3488373,
+      "decoupling": null,
+      "intensity_factor": 82.07547,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 51
+        },
+        {
+          "id": "Z2",
+          "secs": 1460
+        },
+        {
+          "id": "Z3",
+          "secs": 1018
+        },
+        {
+          "id": "Z4",
+          "secs": 358
+        },
+        {
+          "id": "Z5",
+          "secs": 128
+        },
+        {
+          "id": "Z6",
+          "secs": 40
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 478
+        }
+      ],
+      "variability_index": 1.0175439,
+      "ctl_snapshot": 97.68988,
+      "atl_snapshot": 77.622475,
+      "hrr": {
+        "start_index": 2686,
+        "end_index": 2746,
+        "start_time": 2686,
+        "end_time": 2746,
+        "start_bpm": 160,
+        "end_bpm": 135,
+        "hrr": 25
+      },
+      "calories": 499,
+      "interval_summary": [
+        "1x 10m7s 159w",
+        "2x 2m 165w",
+        "3x 30s 174w",
+        "3x 30s 227w",
+        "2x 79s 155w",
+        "1x 60s 228w",
+        "2x 3m 173w",
+        "1x 4m 201w",
+        "5x 10s 296w",
+        "4x 4m50s 159w"
+      ]
+    },
     {
       "id": "i203425414",
       "date": "2026-10-30",
