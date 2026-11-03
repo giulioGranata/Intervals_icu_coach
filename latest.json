@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T07:22:00.257981Z",
-  "activities_signature": "9c09109433fca5d1",
+  "generated_at": "2026-11-03T06:29:33.968499Z",
+  "activities_signature": "0723da601d2ec8f0",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 98.8,
-    "atl": 87.3,
-    "tsb": 11.5,
-    "ramp_rate": -0.4,
-    "acwr": 0.969,
-    "acute_load_7d": 85.6,
-    "chronic_load_28d": 88.3,
-    "monotony": 3.76,
-    "strain": 2252.2,
-    "weekly_load": 599.0,
+    "ctl": 98.3,
+    "atl": 86.0,
+    "tsb": 12.3,
+    "ramp_rate": -0.5,
+    "acwr": 0.964,
+    "acute_load_7d": 83.6,
+    "chronic_load_28d": 86.7,
+    "monotony": 3.67,
+    "strain": 2146.9,
+    "weekly_load": 585.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,37 +43,37 @@
   "phase": {
     "current": "Deload",
     "confidence": "medium",
-    "ctl_slope_per_week": -2.65,
+    "ctl_slope_per_week": -2.84,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 7.2,
-      "z2_pct": 90.3,
+      "z1_pct": 7.6,
+      "z2_pct": 89.9,
       "z3_pct": 2.5,
-      "z1_sec": 9698,
-      "z2_sec": 120806,
-      "z3_sec": 3283,
+      "z1_sec": 10020,
+      "z2_sec": 118659,
+      "z3_sec": 3313,
       "classification": "Threshold",
-      "pi": -0.7,
+      "pi": -0.675,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 12.2,
-      "z2_pct": 85.8,
-      "z3_pct": 2.1,
-      "z1_sec": 4522,
-      "z2_sec": 31898,
-      "z3_sec": 776,
+      "z1_pct": 13.0,
+      "z2_pct": 84.7,
+      "z3_pct": 2.3,
+      "z1_sec": 4800,
+      "z2_sec": 31272,
+      "z3_sec": 835,
       "classification": "Threshold",
-      "pi": -0.525,
+      "pi": -0.452,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 683,
-    "hours": 10.3,
+    "tss": 676,
+    "hours": 10.2,
     "sessions": 10
   },
   "upcoming_events": [],
@@ -81,11 +81,95 @@
     {
       "type": "ALARM",
       "metric": "Monotony",
-      "value": 3.76,
-      "message": "Monotony 3.76 at alarm level (≥2.5). Overuse risk."
+      "value": 3.67,
+      "message": "Monotony 3.67 at alarm level (≥2.5). Overuse risk."
     }
   ],
   "recent_activities": [
+    {
+      "id": "i205072457",
+      "date": "2026-11-03",
+      "name": "Zwift - Dirty Teeth Drills ",
+      "type": "VirtualRide",
+      "duration_sec": 4232,
+      "distance_m": 45371.04,
+      "avg_watts": 169,
+      "np_watts": 172,
+      "avg_hr": 151,
+      "max_hr": 175,
+      "tss": 77,
+      "elevation_m": 47.0,
+      "avg_cadence": 96.68149,
+      "efficiency_factor": 1.1390729,
+      "decoupling": null,
+      "intensity_factor": 81.13207,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 70
+        },
+        {
+          "id": "Z2",
+          "secs": 402
+        },
+        {
+          "id": "Z3",
+          "secs": 3230
+        },
+        {
+          "id": "Z4",
+          "secs": 408
+        },
+        {
+          "id": "Z5",
+          "secs": 88
+        },
+        {
+          "id": "Z6",
+          "secs": 35
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 249
+        }
+      ],
+      "variability_index": 1.0177515,
+      "ctl_snapshot": 98.301735,
+      "atl_snapshot": 85.96874,
+      "hrr": {
+        "start_index": 3456,
+        "end_index": 3516,
+        "start_time": 3456,
+        "end_time": 3516,
+        "start_bpm": 164,
+        "end_bpm": 134,
+        "hrr": 30
+      },
+      "calories": 684,
+      "interval_summary": [
+        "1x 10m23s 163w",
+        "1x 2m 166w",
+        "3x 30s 173w",
+        "10x 30s 211w",
+        "2x 30s 251w",
+        "1x 2m30s 168w",
+        "4x 40s 160w",
+        "2x 20s 228w",
+        "1x 60s 139w",
+        "3x 4m30s 164w",
+        "3x 4m 164w",
+        "2x 3m 159w",
+        "1x 9s 118w",
+        "1x 2s 114w",
+        "1x 3s 143w",
+        "1x 3s 125w",
+        "1x 12m4s 167w"
+      ]
+    },
     {
       "id": "i204647581",
       "date": "2026-11-02",
@@ -726,81 +810,6 @@
         "1x 21s 141w",
         "1x 70s 165w",
         "1x 14m16s 173w"
-      ]
-    },
-    {
-      "id": "i201757625",
-      "date": "2026-10-26",
-      "name": "Zwift - Pacer Group Ride with Taylor",
-      "type": "VirtualRide",
-      "duration_sec": 4521,
-      "distance_m": 48773.77,
-      "avg_watts": 172,
-      "np_watts": 173,
-      "avg_hr": 145,
-      "max_hr": 166,
-      "tss": 84,
-      "elevation_m": 73.0,
-      "avg_cadence": 94.20071,
-      "efficiency_factor": 1.1931034,
-      "decoupling": null,
-      "intensity_factor": 81.603775,
-      "zone_times": [
-        {
-          "id": "Z1",
-          "secs": 72
-        },
-        {
-          "id": "Z2",
-          "secs": 122
-        },
-        {
-          "id": "Z3",
-          "secs": 4028
-        },
-        {
-          "id": "Z4",
-          "secs": 236
-        },
-        {
-          "id": "Z5",
-          "secs": 57
-        },
-        {
-          "id": "Z6",
-          "secs": 7
-        },
-        {
-          "id": "Z7",
-          "secs": 0
-        },
-        {
-          "id": "SS",
-          "secs": 823
-        }
-      ],
-      "variability_index": 1.005814,
-      "ctl_snapshot": 101.18739,
-      "atl_snapshot": 88.47812,
-      "hrr": {
-        "start_index": 912,
-        "end_index": 972,
-        "start_time": 912,
-        "end_time": 972,
-        "start_bpm": 166,
-        "end_bpm": 145,
-        "hrr": 21
-      },
-      "calories": 743,
-      "interval_summary": [
-        "1x 10m11s 164w",
-        "1x 2m 164w",
-        "3x 30s 180w",
-        "3x 30s 227w",
-        "8x 5m2s 173w",
-        "7x 60s 164w",
-        "1x 68s 166w",
-        "1x 11m45s 170w"
       ]
     }
   ]
