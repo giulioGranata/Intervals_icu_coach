@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T04:17:47.056301Z",
-  "activities_signature": "86e60a26c5699a19",
+  "generated_at": "2026-11-12T13:05:15.840916Z",
+  "activities_signature": "ddaabe7987463854",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 96.1,
-    "atl": 87.3,
-    "tsb": 8.8,
+    "ctl": 95.9,
+    "atl": 87.4,
+    "tsb": 8.5,
     "ramp_rate": 0.0,
-    "acwr": 0.912,
-    "acute_load_7d": 74.1,
-    "chronic_load_28d": 81.3,
-    "monotony": 2.08,
-    "strain": 1079.5,
-    "weekly_load": 519.0,
+    "acwr": 1.027,
+    "acute_load_7d": 86.7,
+    "chronic_load_28d": 84.4,
+    "monotony": 4.59,
+    "strain": 2786.1,
+    "weekly_load": 607.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,255 @@
   "phase": {
     "current": "Deload",
     "confidence": "medium",
-    "ctl_slope_per_week": -2.66,
+    "ctl_slope_per_week": -2.61,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
       "z1_pct": 9.7,
-      "z2_pct": 87.9,
-      "z3_pct": 2.3,
-      "z1_sec": 12192,
-      "z2_sec": 110322,
-      "z3_sec": 2931,
+      "z2_pct": 88.0,
+      "z3_pct": 2.4,
+      "z1_sec": 12563,
+      "z2_sec": 114345,
+      "z3_sec": 3091,
       "classification": "Threshold",
-      "pi": -0.595,
+      "pi": -0.577,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 6.3,
-      "z2_pct": 91.3,
-      "z3_pct": 2.4,
-      "z1_sec": 1970,
-      "z2_sec": 28636,
-      "z3_sec": 758,
+      "z1_pct": 6.5,
+      "z2_pct": 90.9,
+      "z3_pct": 2.6,
+      "z1_sec": 2341,
+      "z2_sec": 32659,
+      "z3_sec": 918,
       "classification": "Threshold",
-      "pi": -0.781,
+      "pi": -0.731,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 601,
-    "hours": 8.7,
-    "sessions": 7
+    "tss": 689,
+    "hours": 10.0,
+    "sessions": 10
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.59,
+      "message": "Monotony 4.59 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i209002299",
+      "date": "2026-11-12",
+      "name": "Zwift - Pacer Group Ride with Coco",
+      "type": "VirtualRide",
+      "duration_sec": 934,
+      "distance_m": 9853.3,
+      "avg_watts": 168,
+      "np_watts": 169,
+      "avg_hr": 140,
+      "max_hr": 156,
+      "tss": 18,
+      "elevation_m": 45.0,
+      "avg_cadence": 94.71059,
+      "efficiency_factor": 1.2071428,
+      "decoupling": null,
+      "intensity_factor": 83.66337,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 35
+        },
+        {
+          "id": "Z2",
+          "secs": 53
+        },
+        {
+          "id": "Z3",
+          "secs": 750
+        },
+        {
+          "id": "Z4",
+          "secs": 85
+        },
+        {
+          "id": "Z5",
+          "secs": 9
+        },
+        {
+          "id": "Z6",
+          "secs": 3
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 541
+        }
+      ],
+      "variability_index": 1.0059524,
+      "ctl_snapshot": 95.89109,
+      "atl_snapshot": 87.41947,
+      "hrr": null,
+      "calories": 151,
+      "interval_summary": [
+        "1x 6m8s 168w",
+        "1x 4m23s 173w"
+      ]
+    },
+    {
+      "id": "i208999320",
+      "date": "2026-11-12",
+      "name": "Zwift - Group Ride: EVO CC Core Interval Ride [2.5-3.2w/kg avg] (C)",
+      "type": "VirtualRide",
+      "duration_sec": 929,
+      "distance_m": 9960.43,
+      "avg_watts": 163,
+      "np_watts": 164,
+      "avg_hr": 144,
+      "max_hr": 156,
+      "tss": 17,
+      "elevation_m": 82.0,
+      "avg_cadence": 95.46587,
+      "efficiency_factor": 1.1388888,
+      "decoupling": null,
+      "intensity_factor": 81.18812,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 39
+        },
+        {
+          "id": "Z2",
+          "secs": 97
+        },
+        {
+          "id": "Z3",
+          "secs": 673
+        },
+        {
+          "id": "Z4",
+          "secs": 102
+        },
+        {
+          "id": "Z5",
+          "secs": 19
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 154
+        }
+      ],
+      "variability_index": 1.006135,
+      "ctl_snapshot": 95.89109,
+      "atl_snapshot": 87.41947,
+      "hrr": {
+        "start_index": 855,
+        "end_index": 915,
+        "start_time": 855,
+        "end_time": 915,
+        "start_bpm": 155,
+        "end_bpm": 136,
+        "hrr": 19
+      },
+      "calories": 148,
+      "interval_summary": [
+        "1x 4m6s 164w",
+        "1x 3m25s 161w"
+      ]
+    },
+    {
+      "id": "i208995450",
+      "date": "2026-11-12",
+      "name": "Zwift - Aerobic",
+      "type": "VirtualRide",
+      "duration_sec": 2688,
+      "distance_m": 28851.22,
+      "avg_watts": 168,
+      "np_watts": 170,
+      "avg_hr": 141,
+      "max_hr": 172,
+      "tss": 53,
+      "elevation_m": 0.0,
+      "avg_cadence": 94.799034,
+      "efficiency_factor": 1.2056738,
+      "decoupling": null,
+      "intensity_factor": 84.15842,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 43
+        },
+        {
+          "id": "Z2",
+          "secs": 104
+        },
+        {
+          "id": "Z3",
+          "secs": 2228
+        },
+        {
+          "id": "Z4",
+          "secs": 185
+        },
+        {
+          "id": "Z5",
+          "secs": 43
+        },
+        {
+          "id": "Z6",
+          "secs": 86
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 369
+        }
+      ],
+      "variability_index": 1.0119047,
+      "ctl_snapshot": 95.89109,
+      "atl_snapshot": 87.41947,
+      "hrr": {
+        "start_index": 2136,
+        "end_index": 2196,
+        "start_time": 2136,
+        "end_time": 2196,
+        "start_bpm": 170,
+        "end_bpm": 155,
+        "hrr": 15
+      },
+      "calories": 431,
+      "interval_summary": [
+        "1x 10m2s 159w",
+        "1x 2m 164w",
+        "3x 30s 175w",
+        "2x 30s 212w",
+        "1x 30s 241w",
+        "5x 4m49s 163w",
+        "6x 15s 260w",
+        "1x 4m1s 164w",
+        "1x 13s 137w"
+      ]
+    },
     {
       "id": "i208553303",
       "date": "2026-11-11",
