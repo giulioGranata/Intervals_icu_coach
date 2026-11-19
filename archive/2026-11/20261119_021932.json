@@ -1,0 +1,845 @@
+{
+  "generated_at": "2026-11-19T02:19:32.822510Z",
+  "activities_signature": "4b2fee4d312a2ca8",
+  "protocol_version": "11.24",
+  "script_version": "3.95",
+  "athlete": {
+    "id": "i153108",
+    "name": "Giulio Granata"
+  },
+  "readiness": {
+    "decision": "go",
+    "priority": "P3",
+    "confidence": "medium",
+    "signals": {
+      "hrv": "unknown",
+      "rhr": "unknown",
+      "sleep": "unknown",
+      "tsb": "green",
+      "acwr": "green",
+      "ri": "unknown"
+    },
+    "red_count": 0,
+    "reason": "All signals within acceptable range"
+  },
+  "metrics": {
+    "ctl": 95.1,
+    "atl": 89.2,
+    "tsb": 5.9,
+    "ramp_rate": -0.1,
+    "acwr": 0.932,
+    "acute_load_7d": 77.3,
+    "chronic_load_28d": 82.9,
+    "monotony": 1.85,
+    "strain": 1000.9,
+    "weekly_load": 541.0,
+    "recovery_index": null,
+    "hrv_today": null,
+    "hrv_baseline": null,
+    "rhr_today": null,
+    "rhr_baseline": null,
+    "sleep_hours": null
+  },
+  "phase": {
+    "current": "Deload",
+    "confidence": "medium",
+    "ctl_slope_per_week": -2.0,
+    "hard_day_density": 0.0,
+    "days_to_next_race": null
+  },
+  "tid": {
+    "28d": {
+      "z1_pct": 11.6,
+      "z2_pct": 86.3,
+      "z3_pct": 2.1,
+      "z1_sec": 15108,
+      "z2_sec": 112432,
+      "z3_sec": 2764,
+      "classification": "Threshold",
+      "pi": -0.549,
+      "window_days": 28
+    },
+    "7d": {
+      "z1_pct": 12.9,
+      "z2_pct": 85.5,
+      "z3_pct": 1.6,
+      "z1_sec": 4406,
+      "z2_sec": 29247,
+      "z3_sec": 560,
+      "classification": "Threshold",
+      "pi": -0.617,
+      "window_days": 7
+    }
+  },
+  "weekly_totals": {
+    "tss": 629,
+    "hours": 9.5,
+    "sessions": 11
+  },
+  "upcoming_events": [],
+  "alerts": [],
+  "recent_activities": [
+    {
+      "id": "i211503124",
+      "date": "2026-11-18",
+      "name": "Zwift - Aerobic Foundation Marathon",
+      "type": "VirtualRide",
+      "duration_sec": 5462,
+      "distance_m": 58075.33,
+      "avg_watts": 162,
+      "np_watts": 163,
+      "avg_hr": 145,
+      "max_hr": 168,
+      "tss": 90,
+      "elevation_m": 0.0,
+      "avg_cadence": 90.051674,
+      "efficiency_factor": 1.1241379,
+      "decoupling": null,
+      "intensity_factor": 76.886795,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 101
+        },
+        {
+          "id": "Z2",
+          "secs": 1449
+        },
+        {
+          "id": "Z3",
+          "secs": 3698
+        },
+        {
+          "id": "Z4",
+          "secs": 188
+        },
+        {
+          "id": "Z5",
+          "secs": 25
+        },
+        {
+          "id": "Z6",
+          "secs": 2
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 244
+        }
+      ],
+      "variability_index": 1.0061729,
+      "ctl_snapshot": 95.14473,
+      "atl_snapshot": 89.23325,
+      "hrr": {
+        "start_index": 603,
+        "end_index": 663,
+        "start_time": 603,
+        "end_time": 663,
+        "start_bpm": 160,
+        "end_bpm": 150,
+        "hrr": 10
+      },
+      "calories": 845,
+      "interval_summary": [
+        "7x 10m 160w",
+        "6x 2m 169w",
+        "3x 30s 173w",
+        "3x 30s 215w",
+        "1x 28s 80w",
+        "1x 3m3s 167w",
+        "1x 13s 161w",
+        "1x 2m17s 144w"
+      ]
+    },
+    {
+      "id": "i211054746",
+      "date": "2026-11-17",
+      "name": "Zwift - Aerobic Sustainability",
+      "type": "VirtualRide",
+      "duration_sec": 4501,
+      "distance_m": 48352.85,
+      "avg_watts": 169,
+      "np_watts": 171,
+      "avg_hr": 150,
+      "max_hr": 169,
+      "tss": 81,
+      "elevation_m": 77.0,
+      "avg_cadence": 90.28101,
+      "efficiency_factor": 1.14,
+      "decoupling": null,
+      "intensity_factor": 80.66038,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 91
+        },
+        {
+          "id": "Z2",
+          "secs": 540
+        },
+        {
+          "id": "Z3",
+          "secs": 3397
+        },
+        {
+          "id": "Z4",
+          "secs": 422
+        },
+        {
+          "id": "Z5",
+          "secs": 45
+        },
+        {
+          "id": "Z6",
+          "secs": 6
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 444
+        }
+      ],
+      "variability_index": 1.0118343,
+      "ctl_snapshot": 95.26869,
+      "atl_snapshot": 89.11551,
+      "hrr": {
+        "start_index": 3060,
+        "end_index": 3120,
+        "start_time": 3080,
+        "end_time": 3140,
+        "start_bpm": 161,
+        "end_bpm": 147,
+        "hrr": 14
+      },
+      "calories": 726,
+      "interval_summary": [
+        "1x 10m2s 159w",
+        "1x 2m 166w",
+        "3x 30s 172w",
+        "12x 30s 207w",
+        "1x 5m19s 157w",
+        "11x 3m26s 169w",
+        "1x 12m42s 161w"
+      ]
+    },
+    {
+      "id": "i210611910",
+      "date": "2026-11-16",
+      "name": "Zwift - Group Ride: THE TONE SETTER (B)",
+      "type": "VirtualRide",
+      "duration_sec": 3985,
+      "distance_m": 42342.29,
+      "avg_watts": 165,
+      "np_watts": 166,
+      "avg_hr": 147,
+      "max_hr": 162,
+      "tss": 68,
+      "elevation_m": 110.0,
+      "avg_cadence": 96.721146,
+      "efficiency_factor": 1.1292517,
+      "decoupling": null,
+      "intensity_factor": 78.30189,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 84
+        },
+        {
+          "id": "Z2",
+          "secs": 227
+        },
+        {
+          "id": "Z3",
+          "secs": 3608
+        },
+        {
+          "id": "Z4",
+          "secs": 60
+        },
+        {
+          "id": "Z5",
+          "secs": 5
+        },
+        {
+          "id": "Z6",
+          "secs": 2
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 161
+        }
+      ],
+      "variability_index": 1.0060606,
+      "ctl_snapshot": 95.6125,
+      "atl_snapshot": 90.36176,
+      "hrr": {
+        "start_index": 201,
+        "end_index": 261,
+        "start_time": 201,
+        "end_time": 261,
+        "start_bpm": 162,
+        "end_bpm": 145,
+        "hrr": 17
+      },
+      "calories": 629,
+      "interval_summary": [
+        "2x 3m22s 170w",
+        "2x 5m9s 167w",
+        "3x 3m55s 166w",
+        "1x 6m48s 167w"
+      ]
+    },
+    {
+      "id": "i210598257",
+      "date": "2026-11-16",
+      "name": "Zwift - Warmup 2",
+      "type": "VirtualRide",
+      "duration_sec": 908,
+      "distance_m": 9679.9,
+      "avg_watts": 169,
+      "np_watts": 171,
+      "avg_hr": 71,
+      "max_hr": 101,
+      "tss": 16,
+      "elevation_m": 16.0,
+      "avg_cadence": 92.39714,
+      "efficiency_factor": 2.4084506,
+      "decoupling": null,
+      "intensity_factor": 80.66038,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 18
+        },
+        {
+          "id": "Z2",
+          "secs": 310
+        },
+        {
+          "id": "Z3",
+          "secs": 481
+        },
+        {
+          "id": "Z4",
+          "secs": 59
+        },
+        {
+          "id": "Z5",
+          "secs": 41
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 231
+        }
+      ],
+      "variability_index": 1.0118343,
+      "ctl_snapshot": 95.6125,
+      "atl_snapshot": 90.36176,
+      "hrr": null,
+      "calories": 146,
+      "interval_summary": [
+        "1x 10m2s 160w",
+        "1x 2m 168w",
+        "3x 30s 178w",
+        "3x 30s 223w",
+        "1x 7s 48w"
+      ]
+    },
+    {
+      "id": "i210194294",
+      "date": "2026-11-15",
+      "name": "Zwift - Pacer",
+      "type": "VirtualRide",
+      "duration_sec": 5852,
+      "distance_m": 61576.84,
+      "avg_watts": 174,
+      "np_watts": 176,
+      "avg_hr": 136,
+      "max_hr": 178,
+      "tss": 112,
+      "elevation_m": 162.0,
+      "avg_cadence": 95.143295,
+      "efficiency_factor": 1.2941177,
+      "decoupling": null,
+      "intensity_factor": 83.01887,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 151
+        },
+        {
+          "id": "Z2",
+          "secs": 295
+        },
+        {
+          "id": "Z3",
+          "secs": 4983
+        },
+        {
+          "id": "Z4",
+          "secs": 312
+        },
+        {
+          "id": "Z5",
+          "secs": 90
+        },
+        {
+          "id": "Z6",
+          "secs": 21
+        },
+        {
+          "id": "Z7",
+          "secs": 1
+        },
+        {
+          "id": "SS",
+          "secs": 3211
+        }
+      ],
+      "variability_index": 1.0114943,
+      "ctl_snapshot": 95.89231,
+      "atl_snapshot": 91.33871,
+      "hrr": {
+        "start_index": 206,
+        "end_index": 266,
+        "start_time": 206,
+        "end_time": 266,
+        "start_bpm": 178,
+        "end_bpm": 139,
+        "hrr": 39
+      },
+      "calories": 976,
+      "interval_summary": [
+        "3x 10m1s 171w",
+        "1x 2m 170w",
+        "3x 30s 182w",
+        "3x 30s 221w",
+        "1x 8m7s 164w",
+        "1x 61s 218w",
+        "1x 6s 114w",
+        "1x 2s 110w",
+        "2x 1m57s 146w",
+        "1x 49m22s 177w"
+      ]
+    },
+    {
+      "id": "i209784044",
+      "date": "2026-11-14",
+      "name": "Zwift - Group Ride: Team Italy Saturday Morning Fever (C)",
+      "type": "VirtualRide",
+      "duration_sec": 2816,
+      "distance_m": 27046.09,
+      "avg_watts": 170,
+      "np_watts": 173,
+      "avg_hr": 0,
+      "max_hr": 0,
+      "tss": 52,
+      "elevation_m": 219.0,
+      "avg_cadence": 91.806496,
+      "efficiency_factor": null,
+      "decoupling": null,
+      "intensity_factor": 81.603775,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 95
+        },
+        {
+          "id": "Z2",
+          "secs": 86
+        },
+        {
+          "id": "Z3",
+          "secs": 2511
+        },
+        {
+          "id": "Z4",
+          "secs": 106
+        },
+        {
+          "id": "Z5",
+          "secs": 18
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 329
+        }
+      ],
+      "variability_index": 1.017647,
+      "ctl_snapshot": 95.504196,
+      "atl_snapshot": 88.165855,
+      "hrr": null,
+      "calories": 460,
+      "interval_summary": [
+        "1x 6m3s 171w",
+        "1x 30m9s 172w",
+        "1x 2m57s 177w"
+      ]
+    },
+    {
+      "id": "i209777541",
+      "date": "2026-11-14",
+      "name": "Zwift - Building Climbs",
+      "type": "VirtualRide",
+      "duration_sec": 4308,
+      "distance_m": 47093.1,
+      "avg_watts": 175,
+      "np_watts": 177,
+      "avg_hr": 0,
+      "max_hr": 0,
+      "tss": 83,
+      "elevation_m": 74.0,
+      "avg_cadence": 95.632935,
+      "efficiency_factor": null,
+      "decoupling": null,
+      "intensity_factor": 83.49056,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 77
+        },
+        {
+          "id": "Z2",
+          "secs": 374
+        },
+        {
+          "id": "Z3",
+          "secs": 3192
+        },
+        {
+          "id": "Z4",
+          "secs": 574
+        },
+        {
+          "id": "Z5",
+          "secs": 92
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 1361
+        }
+      ],
+      "variability_index": 1.0114286,
+      "ctl_snapshot": 95.504196,
+      "atl_snapshot": 88.165855,
+      "hrr": null,
+      "calories": 721,
+      "interval_summary": [
+        "1x 10m2s 160w",
+        "6x 2m 171w",
+        "6x 30s 205w",
+        "1x 23m50s 173w",
+        "7x 60s 200w",
+        "1x 4m 167w",
+        "1x 3m 179w",
+        "1x 8m39s 174w",
+        "1x 8s 185w",
+        "1x 9s 61w"
+      ]
+    },
+    {
+      "id": "i209408003",
+      "date": "2026-11-13",
+      "name": "Zwift - FF",
+      "type": "VirtualRide",
+      "duration_sec": 1821,
+      "distance_m": 20159.42,
+      "avg_watts": 182,
+      "np_watts": 185,
+      "avg_hr": 160,
+      "max_hr": 174,
+      "tss": 39,
+      "elevation_m": 33.0,
+      "avg_cadence": 97.27567,
+      "efficiency_factor": 1.15625,
+      "decoupling": null,
+      "intensity_factor": 87.26415,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 54
+        },
+        {
+          "id": "Z2",
+          "secs": 83
+        },
+        {
+          "id": "Z3",
+          "secs": 832
+        },
+        {
+          "id": "Z4",
+          "secs": 801
+        },
+        {
+          "id": "Z5",
+          "secs": 51
+        },
+        {
+          "id": "Z6",
+          "secs": 1
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 955
+        }
+      ],
+      "variability_index": 1.0164835,
+      "ctl_snapshot": 94.552536,
+      "atl_snapshot": 80.97377,
+      "hrr": null,
+      "calories": 317,
+      "interval_summary": [
+        "1x 10m2s 164w",
+        "1x 2m 171w",
+        "3x 30s 179w",
+        "3x 30s 224w",
+        "1x 15m20s 190w"
+      ]
+    },
+    {
+      "id": "i209002299",
+      "date": "2026-11-12",
+      "name": "Zwift - Pacer Group Ride with Coco",
+      "type": "VirtualRide",
+      "duration_sec": 934,
+      "distance_m": 9853.3,
+      "avg_watts": 168,
+      "np_watts": 169,
+      "avg_hr": 140,
+      "max_hr": 156,
+      "tss": 18,
+      "elevation_m": 45.0,
+      "avg_cadence": 94.71059,
+      "efficiency_factor": 1.2071428,
+      "decoupling": null,
+      "intensity_factor": 83.66337,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 35
+        },
+        {
+          "id": "Z2",
+          "secs": 53
+        },
+        {
+          "id": "Z3",
+          "secs": 750
+        },
+        {
+          "id": "Z4",
+          "secs": 85
+        },
+        {
+          "id": "Z5",
+          "secs": 9
+        },
+        {
+          "id": "Z6",
+          "secs": 3
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 541
+        }
+      ],
+      "variability_index": 1.0059524,
+      "ctl_snapshot": 95.89109,
+      "atl_snapshot": 87.41947,
+      "hrr": null,
+      "calories": 151,
+      "interval_summary": [
+        "1x 6m8s 168w",
+        "1x 4m23s 173w"
+      ]
+    },
+    {
+      "id": "i208999320",
+      "date": "2026-11-12",
+      "name": "Zwift - Group Ride: EVO CC Core Interval Ride [2.5-3.2w/kg avg] (C)",
+      "type": "VirtualRide",
+      "duration_sec": 929,
+      "distance_m": 9960.43,
+      "avg_watts": 163,
+      "np_watts": 164,
+      "avg_hr": 144,
+      "max_hr": 156,
+      "tss": 17,
+      "elevation_m": 82.0,
+      "avg_cadence": 95.46587,
+      "efficiency_factor": 1.1388888,
+      "decoupling": null,
+      "intensity_factor": 81.18812,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 39
+        },
+        {
+          "id": "Z2",
+          "secs": 97
+        },
+        {
+          "id": "Z3",
+          "secs": 673
+        },
+        {
+          "id": "Z4",
+          "secs": 102
+        },
+        {
+          "id": "Z5",
+          "secs": 19
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 154
+        }
+      ],
+      "variability_index": 1.006135,
+      "ctl_snapshot": 95.89109,
+      "atl_snapshot": 87.41947,
+      "hrr": {
+        "start_index": 855,
+        "end_index": 915,
+        "start_time": 855,
+        "end_time": 915,
+        "start_bpm": 155,
+        "end_bpm": 136,
+        "hrr": 19
+      },
+      "calories": 148,
+      "interval_summary": [
+        "1x 4m6s 164w",
+        "1x 3m25s 161w"
+      ]
+    },
+    {
+      "id": "i208995450",
+      "date": "2026-11-12",
+      "name": "Zwift - Aerobic",
+      "type": "VirtualRide",
+      "duration_sec": 2688,
+      "distance_m": 28851.22,
+      "avg_watts": 168,
+      "np_watts": 170,
+      "avg_hr": 141,
+      "max_hr": 172,
+      "tss": 53,
+      "elevation_m": 0.0,
+      "avg_cadence": 94.799034,
+      "efficiency_factor": 1.2056738,
+      "decoupling": null,
+      "intensity_factor": 84.15842,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 43
+        },
+        {
+          "id": "Z2",
+          "secs": 104
+        },
+        {
+          "id": "Z3",
+          "secs": 2228
+        },
+        {
+          "id": "Z4",
+          "secs": 185
+        },
+        {
+          "id": "Z5",
+          "secs": 43
+        },
+        {
+          "id": "Z6",
+          "secs": 86
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 369
+        }
+      ],
+      "variability_index": 1.0119047,
+      "ctl_snapshot": 95.89109,
+      "atl_snapshot": 87.41947,
+      "hrr": {
+        "start_index": 2136,
+        "end_index": 2196,
+        "start_time": 2136,
+        "end_time": 2196,
+        "start_bpm": 170,
+        "end_bpm": 155,
+        "hrr": 15
+      },
+      "calories": 431,
+      "interval_summary": [
+        "1x 10m2s 159w",
+        "1x 2m 164w",
+        "3x 30s 175w",
+        "2x 30s 212w",
+        "1x 30s 241w",
+        "5x 4m49s 163w",
+        "6x 15s 260w",
+        "1x 4m1s 164w",
+        "1x 13s 137w"
+      ]
+    }
+  ]
+}
