@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T08:55:24.484043Z",
-  "activities_signature": "83ad7c08f91d78a6",
+  "generated_at": "2026-11-21T04:09:28.981868Z",
+  "activities_signature": "9db2b48979977e27",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -27,12 +27,12 @@
     "atl": 83.3,
     "tsb": 10.5,
     "ramp_rate": -1.2,
-    "acwr": 1.054,
-    "acute_load_7d": 90.9,
-    "chronic_load_28d": 86.2,
-    "monotony": 3.56,
-    "strain": 2264.2,
-    "weekly_load": 636.0,
+    "acwr": 0.87,
+    "acute_load_7d": 71.6,
+    "chronic_load_28d": 82.2,
+    "monotony": 2.08,
+    "strain": 1042.1,
+    "weekly_load": 501.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -42,49 +42,42 @@
   },
   "phase": {
     "current": "Deload",
-    "confidence": "low",
-    "ctl_slope_per_week": -1.9,
+    "confidence": "medium",
+    "ctl_slope_per_week": -2.03,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 11.5,
+      "z1_pct": 11.6,
       "z2_pct": 86.4,
-      "z3_pct": 2.1,
-      "z1_sec": 15219,
-      "z2_sec": 114050,
-      "z3_sec": 2731,
+      "z3_pct": 2.0,
+      "z1_sec": 15076,
+      "z2_sec": 112422,
+      "z3_sec": 2647,
       "classification": "Threshold",
-      "pi": -0.554,
+      "pi": -0.571,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 12.5,
-      "z2_pct": 85.7,
+      "z1_pct": 12.7,
+      "z2_pct": 85.5,
       "z3_pct": 1.8,
-      "z1_sec": 4516,
-      "z2_sec": 31028,
-      "z3_sec": 661,
+      "z1_sec": 4379,
+      "z2_sec": 29395,
+      "z3_sec": 609,
       "classification": "Threshold",
-      "pi": -0.581,
+      "pi": -0.573,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 675,
-    "hours": 10.1,
-    "sessions": 11
+    "tss": 636,
+    "hours": 9.5,
+    "sessions": 10
   },
   "upcoming_events": [],
-  "alerts": [
-    {
-      "type": "ALARM",
-      "metric": "Monotony",
-      "value": 3.56,
-      "message": "Monotony 3.56 at alarm level (≥2.5). Overuse risk."
-    }
-  ],
+  "alerts": [],
   "recent_activities": [
     {
       "id": "i212338944",
@@ -777,70 +770,6 @@
         "1x 8m39s 174w",
         "1x 8s 185w",
         "1x 9s 61w"
-      ]
-    },
-    {
-      "id": "i209408003",
-      "date": "2026-11-13",
-      "name": "Zwift - FF",
-      "type": "VirtualRide",
-      "duration_sec": 1821,
-      "distance_m": 20159.42,
-      "avg_watts": 182,
-      "np_watts": 185,
-      "avg_hr": 160,
-      "max_hr": 174,
-      "tss": 39,
-      "elevation_m": 33.0,
-      "avg_cadence": 97.27567,
-      "efficiency_factor": 1.15625,
-      "decoupling": null,
-      "intensity_factor": 87.26415,
-      "zone_times": [
-        {
-          "id": "Z1",
-          "secs": 54
-        },
-        {
-          "id": "Z2",
-          "secs": 83
-        },
-        {
-          "id": "Z3",
-          "secs": 832
-        },
-        {
-          "id": "Z4",
-          "secs": 801
-        },
-        {
-          "id": "Z5",
-          "secs": 51
-        },
-        {
-          "id": "Z6",
-          "secs": 1
-        },
-        {
-          "id": "Z7",
-          "secs": 0
-        },
-        {
-          "id": "SS",
-          "secs": 955
-        }
-      ],
-      "variability_index": 1.0164835,
-      "ctl_snapshot": 94.552536,
-      "atl_snapshot": 80.97377,
-      "hrr": null,
-      "calories": 317,
-      "interval_summary": [
-        "1x 10m2s 164w",
-        "1x 2m 171w",
-        "3x 30s 179w",
-        "3x 30s 224w",
-        "1x 15m20s 190w"
       ]
     }
   ]
