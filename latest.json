@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T04:09:28.981868Z",
-  "activities_signature": "9db2b48979977e27",
+  "generated_at": "2026-11-21T12:39:37.583284Z",
+  "activities_signature": "90a21793df386d61",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 93.8,
-    "atl": 83.3,
-    "tsb": 10.5,
-    "ramp_rate": -1.2,
-    "acwr": 0.87,
-    "acute_load_7d": 71.6,
-    "chronic_load_28d": 82.2,
-    "monotony": 2.08,
-    "strain": 1042.1,
-    "weekly_load": 501.0,
+    "ctl": 94.3,
+    "atl": 87.6,
+    "tsb": 6.8,
+    "ramp_rate": 0.0,
+    "acwr": 1.019,
+    "acute_load_7d": 88.0,
+    "chronic_load_28d": 86.4,
+    "monotony": 4.16,
+    "strain": 2562.6,
+    "weekly_load": 616.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -42,43 +42,253 @@
   },
   "phase": {
     "current": "Deload",
-    "confidence": "medium",
-    "ctl_slope_per_week": -2.03,
+    "confidence": "low",
+    "ctl_slope_per_week": -1.83,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 11.6,
-      "z2_pct": 86.4,
+      "z1_pct": 11.5,
+      "z2_pct": 86.5,
       "z3_pct": 2.0,
-      "z1_sec": 15076,
-      "z2_sec": 112422,
-      "z3_sec": 2647,
+      "z1_sec": 15716,
+      "z2_sec": 118059,
+      "z3_sec": 2708,
       "classification": "Threshold",
-      "pi": -0.571,
+      "pi": -0.575,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 12.7,
-      "z2_pct": 85.5,
-      "z3_pct": 1.8,
-      "z1_sec": 4379,
-      "z2_sec": 29395,
-      "z3_sec": 609,
+      "z1_pct": 12.3,
+      "z2_pct": 86.0,
+      "z3_pct": 1.6,
+      "z1_sec": 5019,
+      "z2_sec": 35032,
+      "z3_sec": 670,
       "classification": "Threshold",
-      "pi": -0.573,
+      "pi": -0.64,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 636,
-    "hours": 9.5,
-    "sessions": 10
+    "tss": 751,
+    "hours": 11.3,
+    "sessions": 13
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.16,
+      "message": "Monotony 4.16 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i212692511",
+      "date": "2026-11-21",
+      "name": "Zwift - Group Ride: Team Italy Saturday Morning Fever (C)",
+      "type": "VirtualRide",
+      "duration_sec": 1808,
+      "distance_m": 17634.44,
+      "avg_watts": 157,
+      "np_watts": 161,
+      "avg_hr": 138,
+      "max_hr": 158,
+      "tss": 32,
+      "elevation_m": 120.0,
+      "avg_cadence": 97.60278,
+      "efficiency_factor": 1.1666666,
+      "decoupling": null,
+      "intensity_factor": 79.70297,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 182
+        },
+        {
+          "id": "Z2",
+          "secs": 262
+        },
+        {
+          "id": "Z3",
+          "secs": 1110
+        },
+        {
+          "id": "Z4",
+          "secs": 244
+        },
+        {
+          "id": "Z5",
+          "secs": 11
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 824
+        }
+      ],
+      "variability_index": 1.0254776,
+      "ctl_snapshot": 94.32252,
+      "atl_snapshot": 87.55086,
+      "hrr": {
+        "start_index": 794,
+        "end_index": 854,
+        "start_time": 794,
+        "end_time": 854,
+        "start_bpm": 153,
+        "end_bpm": 134,
+        "hrr": 19
+      },
+      "calories": 272,
+      "interval_summary": [
+        "1x 2m51s 159w",
+        "1x 6m22s 172w"
+      ]
+    },
+    {
+      "id": "i212687417",
+      "date": "2026-11-21",
+      "name": "Zwift - Group Ride: Hercules - The Fellowship of the Badgerhood (E)",
+      "type": "VirtualRide",
+      "duration_sec": 2838,
+      "distance_m": 25175.48,
+      "avg_watts": 162,
+      "np_watts": 163,
+      "avg_hr": 140,
+      "max_hr": 151,
+      "tss": 51,
+      "elevation_m": 18.0,
+      "avg_cadence": 94.138466,
+      "efficiency_factor": 1.1642857,
+      "decoupling": null,
+      "intensity_factor": 80.69307,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 76
+        },
+        {
+          "id": "Z2",
+          "secs": 28
+        },
+        {
+          "id": "Z3",
+          "secs": 2673
+        },
+        {
+          "id": "Z4",
+          "secs": 56
+        },
+        {
+          "id": "Z5",
+          "secs": 6
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 665
+        }
+      ],
+      "variability_index": 1.0061729,
+      "ctl_snapshot": 94.32252,
+      "atl_snapshot": 87.55086,
+      "hrr": null,
+      "calories": 444,
+      "interval_summary": [
+        "1x 9m15s 165w",
+        "1x 8m16s 166w",
+        "1x 4m39s 170w"
+      ]
+    },
+    {
+      "id": "i212683158",
+      "date": "2026-11-21",
+      "name": "Zwift - Pacer Group Ride with Dani",
+      "type": "VirtualRide",
+      "duration_sec": 1689,
+      "distance_m": 18113.5,
+      "avg_watts": 165,
+      "np_watts": 168,
+      "avg_hr": 141,
+      "max_hr": 165,
+      "tss": 32,
+      "elevation_m": 29.0,
+      "avg_cadence": 95.01779,
+      "efficiency_factor": 1.1914893,
+      "decoupling": null,
+      "intensity_factor": 83.16832,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 55
+        },
+        {
+          "id": "Z2",
+          "secs": 37
+        },
+        {
+          "id": "Z3",
+          "secs": 1357
+        },
+        {
+          "id": "Z4",
+          "secs": 197
+        },
+        {
+          "id": "Z5",
+          "secs": 44
+        },
+        {
+          "id": "Z6",
+          "secs": 0
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 418
+        }
+      ],
+      "variability_index": 1.0181818,
+      "ctl_snapshot": 94.32252,
+      "atl_snapshot": 87.55086,
+      "hrr": {
+        "start_index": 919,
+        "end_index": 979,
+        "start_time": 919,
+        "end_time": 979,
+        "start_bpm": 165,
+        "end_bpm": 147,
+        "hrr": 18
+      },
+      "calories": 267,
+      "interval_summary": [
+        "1x 10m16s 156w",
+        "1x 2m 166w",
+        "3x 30s 173w",
+        "3x 30s 214w",
+        "1x 12m54s 165w"
+      ]
+    },
     {
       "id": "i212338944",
       "date": "2026-11-20",
