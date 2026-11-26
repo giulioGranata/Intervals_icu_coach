@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T02:43:54.524176Z",
-  "activities_signature": "3dd62486643531ff",
+  "generated_at": "2026-11-26T11:31:18.157476Z",
+  "activities_signature": "acd77d3de376ddac",
   "protocol_version": "11.24",
   "script_version": "3.95",
   "athlete": {
@@ -23,16 +23,16 @@
     "reason": "All signals within acceptable range"
   },
   "metrics": {
-    "ctl": 93.8,
-    "atl": 88.2,
-    "tsb": 5.6,
-    "ramp_rate": -0.1,
-    "acwr": 0.885,
-    "acute_load_7d": 73.7,
-    "chronic_load_28d": 83.2,
-    "monotony": 2.06,
-    "strain": 1063.0,
-    "weekly_load": 516.0,
+    "ctl": 93.5,
+    "atl": 87.2,
+    "tsb": 6.3,
+    "ramp_rate": -0.3,
+    "acwr": 0.99,
+    "acute_load_7d": 85.3,
+    "chronic_load_28d": 86.1,
+    "monotony": 4.4,
+    "strain": 2626.8,
+    "weekly_load": 597.0,
     "recovery_index": null,
     "hrv_today": null,
     "hrv_baseline": null,
@@ -43,42 +43,123 @@
   "phase": {
     "current": "Deload",
     "confidence": "low",
-    "ctl_slope_per_week": -1.64,
+    "ctl_slope_per_week": -1.65,
     "hard_day_density": 0.0,
     "days_to_next_race": null
   },
   "tid": {
     "28d": {
-      "z1_pct": 11.8,
-      "z2_pct": 86.0,
-      "z3_pct": 2.2,
-      "z1_sec": 15292,
-      "z2_sec": 111173,
-      "z3_sec": 2794,
+      "z1_pct": 11.7,
+      "z2_pct": 85.9,
+      "z3_pct": 2.4,
+      "z1_sec": 15626,
+      "z2_sec": 114475,
+      "z3_sec": 3151,
       "classification": "Threshold",
-      "pi": -0.52,
+      "pi": -0.486,
       "window_days": 28
     },
     "7d": {
-      "z1_pct": 7.5,
-      "z2_pct": 90.4,
-      "z3_pct": 2.1,
-      "z1_sec": 2387,
-      "z2_sec": 28753,
-      "z3_sec": 669,
+      "z1_pct": 7.6,
+      "z2_pct": 89.5,
+      "z3_pct": 2.9,
+      "z1_sec": 2721,
+      "z2_sec": 32055,
+      "z3_sec": 1026,
       "classification": "Threshold",
-      "pi": -0.759,
+      "pi": -0.609,
       "window_days": 7
     }
   },
   "weekly_totals": {
-    "tss": 604,
-    "hours": 8.8,
-    "sessions": 12
+    "tss": 685,
+    "hours": 9.9,
+    "sessions": 13
   },
   "upcoming_events": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "ALARM",
+      "metric": "Monotony",
+      "value": 4.4,
+      "message": "Monotony 4.4 at alarm level (≥2.5). Overuse risk."
+    }
+  ],
   "recent_activities": [
+    {
+      "id": "i214788177",
+      "date": "2026-11-26",
+      "name": "Zwift - Workout 4: Alpecin-Premier Tech Team Camp",
+      "type": "VirtualRide",
+      "duration_sec": 3992,
+      "distance_m": 42916.47,
+      "avg_watts": 168,
+      "np_watts": 173,
+      "avg_hr": 149,
+      "max_hr": 173,
+      "tss": 81,
+      "elevation_m": 69.0,
+      "avg_cadence": 93.58543,
+      "efficiency_factor": 1.1610738,
+      "decoupling": null,
+      "intensity_factor": 85.64356,
+      "zone_times": [
+        {
+          "id": "Z1",
+          "secs": 94
+        },
+        {
+          "id": "Z2",
+          "secs": 240
+        },
+        {
+          "id": "Z3",
+          "secs": 3046
+        },
+        {
+          "id": "Z4",
+          "secs": 256
+        },
+        {
+          "id": "Z5",
+          "secs": 109
+        },
+        {
+          "id": "Z6",
+          "secs": 247
+        },
+        {
+          "id": "Z7",
+          "secs": 1
+        },
+        {
+          "id": "SS",
+          "secs": 707
+        }
+      ],
+      "variability_index": 1.0297619,
+      "ctl_snapshot": 93.51822,
+      "atl_snapshot": 87.22438,
+      "hrr": {
+        "start_index": 2455,
+        "end_index": 2515,
+        "start_time": 2455,
+        "end_time": 2515,
+        "start_bpm": 164,
+        "end_bpm": 138,
+        "hrr": 26
+      },
+      "calories": 642,
+      "interval_summary": [
+        "1x 10m22s 154w",
+        "1x 2m 171w",
+        "3x 30s 174w",
+        "3x 30s 224w",
+        "1x 6m35s 163w",
+        "14x 20s 252w",
+        "15x 2m40s 160w"
+      ]
+    },
     {
       "id": "i214378116",
       "date": "2026-11-25",
